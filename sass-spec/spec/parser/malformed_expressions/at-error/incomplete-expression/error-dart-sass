@@ -1,0 +1,4 @@
+Error: expected ")".
+@error("foo";
+            ^
+  spec/parser/malformed_expressions/at-error/incomplete-expression/input.scss 1:13  root stylesheet

@@ -1,0 +1,4 @@
+Error: Mixins may not contain mixin declarations.
+  @mixin nested {
+  ^^^^^^^^^^^^^^
+  spec/libsass-issues/issue_1941/mixin_mixin/input.scss 2:3  root stylesheet

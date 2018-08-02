@@ -1,0 +1,4 @@
+Error: Invalid function name.
+@function url($src, $path:''){
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  spec/libsass-issues/issue_674/input.scss 5:1  root stylesheet

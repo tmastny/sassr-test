@@ -1,0 +1,4 @@
+Error: Invalid UTF-8.
+��������{a:c
+^
+  spec/errors/unicode/invalid/before/input.scss 1:1  root stylesheet

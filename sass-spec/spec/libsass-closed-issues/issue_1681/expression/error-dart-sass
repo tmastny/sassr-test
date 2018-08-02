@@ -1,0 +1,4 @@
+Error: Invalid function name.
+@function expression() {
+^^^^^^^^^^^^^^^^^^^^^^
+  spec/libsass-issues/issue_1681/expression/input.scss 1:1  root stylesheet

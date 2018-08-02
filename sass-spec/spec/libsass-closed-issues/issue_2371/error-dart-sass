@@ -1,0 +1,4 @@
+Error: expected "{".
+
+^
+  spec/libsass-issues/issue_2371/input.scss 2:1  root stylesheet

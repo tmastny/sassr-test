@@ -1,0 +1,4 @@
+Error: Expected expression.
+  d:
+    ^
+  /sass/spec/libsass-issues/issue_945/input.scss 3:5  root stylesheet

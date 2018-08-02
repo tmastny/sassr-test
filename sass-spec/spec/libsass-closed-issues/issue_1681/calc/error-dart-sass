@@ -1,0 +1,4 @@
+Error: Invalid function name.
+@function calc() {
+^^^^^^^^^^^^^^^^
+  spec/libsass-issues/issue_1681/calc/input.scss 1:1  root stylesheet

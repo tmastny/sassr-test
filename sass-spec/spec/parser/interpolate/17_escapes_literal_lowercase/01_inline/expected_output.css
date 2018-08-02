@@ -1,0 +1,8 @@
+.result {
+  output: \b \c \d \e \f ghijklmnopqrstuvwxyz;
+  output: \b \c \d \e \f ghijklmnopqrstuvwxyz;
+  output: "[\\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz]";
+  output: "\\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz";
+  output: "\\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz";
+  output: "['\\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz']";
+}

@@ -1,0 +1,4 @@
+Error: Invalid UTF-8.
+foo{;��������
+     ^
+  spec/errors/unicode/invalid/after/input.scss 1:6  root stylesheet

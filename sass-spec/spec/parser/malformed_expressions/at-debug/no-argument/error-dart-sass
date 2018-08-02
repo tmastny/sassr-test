@@ -1,0 +1,4 @@
+Error: Expected expression.
+@debug;
+      ^
+  spec/parser/malformed_expressions/at-debug/no-argument/input.scss 1:7  root stylesheet
