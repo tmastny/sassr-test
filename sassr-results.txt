@@ -1,0 +1,6325 @@
+Recursively searching under /Users/Tim/rpackages/sassr-test/sass-spec/spec for test files to test './sassr.R' against language version 4.0.
+
+Run options: --seed 14477
+
+# Running:
+
+.F.........F.......F........F...F......FF.....F.........F.F.........F.....F...........F.......FF..F.F...............F......FFFF.F.............F...F.........F....F....F..F.......F......F........F..F.............F..F.F...FF.......F....F...F....F...F.....F.............................F.F...F.............F.......F.......F.....F..F.....F..........................F.....F..F......F.F......F..FFF......F.........F....F..F.FF.F..F............F.F.......F......F.F.F...........F...F.......F.......F.....F...F....FF.......F.............F....FF...F.......F.F...FF...F...F..................F..FF.F.F....F.F..............F........F.............F......F.......F...........F.....F..F.....F........FF.F.....F.........F...........F...........F.......F...F...............F.............F.......F............................F..................................FF.....FF..F.F.........F.FF.FF................F...................F...................F..F......FFF.F.......F.........F.F...........F..FFF...........................F..F......F.....F.................F.............F.........F...................F.......F....F....F..........F..........F..F.........F...F..F.......F..........F..............F....F.FF.F...........F...F....F......F.....................F.F.........F.F..F..FF.......F.............F...F..F......F.....F.....F..............F......FFF...F......F......F........F.F...F..........F...................FF.F...........FF....F....F....F.F.....F.F......................F...F...F.F............................F.F...F..........F.....F..F....F.......F.........FF...F.........F..F...........F..............FF.F...........FF...........F..............F...............F............F...........F..........F..FF.FF...........F.....F....F...........F..F.F.FF..F.......F.....F......F...........F...............F........F..F.F........F............F.FF.F..F.........F......F...FF.....F.....F.......................FF.................FF............................F.FFF....F.....................FF.....F......F..FF.F.....................F.................F...
+
+Finished in 694.717776s, 2.9278 runs/s, 2.5046 assertions/s.
+
+  1) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/division/numbers/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -4,40 +4,40 @@
+   test-3: 10/ 10;
+   test-4: 10 / 10;
+   test-5: 10/10;
+-  test-6: 10/10;
+-  test-7: 10/10;
+-  test-8: 10/10;
+-  test-9: 10/1 0;
+-  test-10: 10/1 0;
+-  test-11: 10/1 0;
+-  test-12: 10/1 0;
++  test-6: 10 /10;
++  test-7: 10/ 10;
++  test-8: 10 / 10;
++  test-9: 10/10;
++  test-10: 10/10;
++  test-11: 10/10;
++  test-12: 10/10;
+   test-13: 10/10;
+-  test-14: 10/10;
+-  test-15: 10/10;
+-  test-16: 10/10;
++  test-14: 10 /10;
++  test-15: 10/ 10;
++  test-16: 10 / 10;
+   test-17: 10/10;
+-  test-18: 10/10;
+-  test-19: 10/10;
+-  test-20: 10/10;
+-  test-21: 10/1 0;
+-  test-22: 10/1 0;
+-  test-23: 10/1 0;
+-  test-24: 10/1 0;
++  test-18: 10 /10;
++  test-19: 10/ 10;
++  test-20: 10 / 10;
++  test-21: 10/10;
++  test-22: 10 /10;
++  test-23: 10/ 10;
++  test-24: 10 / 10;
+   test-25: 10/10;
+-  test-26: 10/10;
+-  test-27: 10/10;
+-  test-28: 10/10;
+-  test-29: 1 0/1 0;
+-  test-30: 1 0/1 0;
+-  test-31: 1 0/1 0;
+-  test-32: 1 0/1 0;
+-  test-33: 1 0/10;
+-  test-34: 1 0/10;
+-  test-35: 1 0/10;
+-  test-36: 1 0/10;
++  test-26: 10 /10;
++  test-27: 10/ 10;
++  test-28: 10 / 10;
++  test-29: 10/10;
++  test-30: 10 /10;
++  test-31: 10/ 10;
++  test-32: 10 / 10;
++  test-33: 10/10;
++  test-34: 10 /10;
++  test-35: 10/ 10;
++  test-36: 10 / 10;
+   test-37: 10/10;
+-  test-38: 10/10;
+-  test-39: 10/10;
+-  test-40: 10/10;
++  test-38: 10 /10;
++  test-39: 10/ 10;
++  test-40: 10 / 10;
+ }
+ "
+
+
+
+  2) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/23_escapes_literal_specials/02_variable [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,9 @@
+ ".result {
+-  output: \\0 _\\a _\\a ;
+-  output: \\0 _\\a _\\a ;
+-  output: \"[\\\\0 _\\\\a _\\\\a ]\";
+-  output: \"\\\\0 _\\\\a _\\\\a \";
+-  output: \"\\\\0 _\\\\a _\\\\a \";
+-  output: \"['\\\\0 _\\\\a _\\\\a ']\";
++  output: \\0_\\a_\\A;
++  output: \\0_\\a_\\A;
++  output: \"[\\\\0_\\\\a_\\\\A]\";
++  output: \"\\\\0_\\\\a_\\\\A\";
++  output: \"\\\\0_\\\\a_\\\\A\";
++  output: \"['\\\\0_\\\\a_\\\\A']\";
+ }
+ "
+
+
+
+  3) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_2374 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+No error message produced.
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-"WARNING on line 7, column 10 of /sass/spec/libsass-issues/issue_2374/input.scss:
+-You probably don't mean to use the color value `yellow' in interpolation here."
++""
+
+
+
+  4) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/logic_ne/strings/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -7,57 +7,57 @@
+   test-6: true;
+   test-7: true;
+   test-8: true;
+-  test-9: true;
+-  test-10: true;
+-  test-11: true;
+-  test-12: true;
+-  test-13: true;
+-  test-14: true;
+-  test-15: true;
+-  test-16: true;
+-  test-17: true;
+-  test-18: true;
+-  test-19: true;
+-  test-20: true;
++  test-9: literal!=interpolant;
++  test-10: literal !=interpolant;
++  test-11: literal!= interpolant;
++  test-12: literal != interpolant;
++  test-13: trueritlp;
++  test-14: trueritlp;
++  test-15: trueritlp;
++  test-16: trueritlp;
++  test-17: literal!=litlp_rschema;
++  test-18: literal !=litlp_rschema;
++  test-19: literal!= litlp_rschema;
++  test-20: literal != litlp_rschema;
+   test-21: false;
+   test-22: false;
+   test-23: false;
+   test-24: false;
+-  test-25: true;
+-  test-26: true;
+-  test-27: true;
+-  test-28: true;
+-  test-29: true;
+-  test-30: true;
+-  test-31: true;
+-  test-32: true;
+-  test-33: true;
+-  test-34: true;
+-  test-35: true;
+-  test-36: true;
+-  test-37: false;
+-  test-38: false;
+-  test-39: false;
+-  test-40: false;
+-  test-41: true;
+-  test-42: true;
+-  test-43: true;
+-  test-44: true;
+-  test-45: true;
+-  test-46: true;
+-  test-47: true;
+-  test-48: true;
+-  test-49: false;
+-  test-50: false;
+-  test-51: false;
+-  test-52: false;
+-  test-53: true;
+-  test-54: true;
+-  test-55: true;
+-  test-56: true;
+-  test-57: false;
+-  test-58: false;
+-  test-59: false;
+-  test-60: false;
++  test-25: \"quoted\"!=interpolant;
++  test-26: \"quoted\" !=interpolant;
++  test-27: \"quoted\"!= interpolant;
++  test-28: \"quoted\" != interpolant;
++  test-29: trueritlp;
++  test-30: trueritlp;
++  test-31: trueritlp;
++  test-32: trueritlp;
++  test-33: \"quoted\"!=litlp_rschema;
++  test-34: \"quoted\" !=litlp_rschema;
++  test-35: \"quoted\"!= litlp_rschema;
++  test-36: \"quoted\" != litlp_rschema;
++  test-37: interpolant!=interpolant;
++  test-38: interpolant !=interpolant;
++  test-39: interpolant!= interpolant;
++  test-40: interpolant != interpolant;
++  test-41: interpolant!=lschema_ritlp;
++  test-42: interpolant !=lschema_ritlp;
++  test-43: interpolant!= lschema_ritlp;
++  test-44: interpolant != lschema_ritlp;
++  test-45: interpolant!=litlp_rschema;
++  test-46: interpolant !=litlp_rschema;
++  test-47: interpolant!= litlp_rschema;
++  test-48: interpolant != litlp_rschema;
++  test-49: lschema_ritlp!=lschema_ritlp;
++  test-50: lschema_ritlp !=lschema_ritlp;
++  test-51: lschema_ritlp!= lschema_ritlp;
++  test-52: lschema_ritlp != lschema_ritlp;
++  test-53: lschema_ritlp!=litlp_rschema;
++  test-54: lschema_ritlp !=litlp_rschema;
++  test-55: lschema_ritlp!= litlp_rschema;
++  test-56: lschema_ritlp != litlp_rschema;
++  test-57: litlp_rschema!=litlp_rschema;
++  test-58: litlp_rschema !=litlp_rschema;
++  test-59: litlp_rschema!= litlp_rschema;
++  test-60: litlp_rschema != litlp_rschema;
+ }
+ "
+
+
+
+  5) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_238764 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+  6) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass/propsets [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -20,8 +20,8 @@
+ }
+ div sp\\  p, div sp\\  |q, #abcan p, #abcan |q {
+   background: blue;
+-  color: hey;
+-  width: \\10 \\ \\ ;
++  color: \\hey;
++  width: \\10 \\20 \\ ;
+ }
+ div sp\\  p a, div sp\\  |q a, #abcan p a, #abcan |q a {
+   height: 1;
+
+
+
+  7) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/error/too_many_question_marks [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \";\"."
++"Error: Invalid CSS after \"  a: U+??????\": expected expression (e.g. 1px, bold), was \"?;\""
+
+
+
+  8) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_100 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+ "test {
+-  background-color: #cc0000 \\9 ;
++  background-color: #cc0000 \\9;
+ }
+ "
+
+
+
+  9) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/extend-tests/200_test_extend_with_subject_transfers_subject_to_extender [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Invalid CSS after "f": expected 1 selector or at-rule, was "foo bar! baz {a: b}"
+        on line 1:1 of /sass/spec/extend-tests/200_test_extend_with_subject_transfers_subject_to_extender/input.scss
+>> foo bar! baz {a: b}
+
+   ^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+ 10) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/division/strings/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -8,56 +8,56 @@
+   test-7: literal/ \"quoted\";
+   test-8: literal / \"quoted\";
+   test-9: literal/interpolant;
+-  test-10: literal/interpolant;
+-  test-11: literal/interpolant;
+-  test-12: literal/interpolant;
++  test-10: literal /interpolant;
++  test-11: literal/ interpolant;
++  test-12: literal / interpolant;
+   test-13: literal/lschema_ritlp;
+   test-14: literal/lschema_ritlp;
+   test-15: literal/lschema_ritlp;
+   test-16: literal/lschema_ritlp;
+   test-17: literal/litlp_rschema;
+-  test-18: literal/litlp_rschema;
+-  test-19: literal/litlp_rschema;
+-  test-20: literal/litlp_rschema;
++  test-18: literal /litlp_rschema;
++  test-19: literal/ litlp_rschema;
++  test-20: literal / litlp_rschema;
+   test-21: \"quoted\"/\"quoted\";
+   test-22: \"quoted\" /\"quoted\";
+   test-23: \"quoted\"/ \"quoted\";
+   test-24: \"quoted\" / \"quoted\";
+   test-25: \"quoted\"/interpolant;
+-  test-26: \"quoted\"/interpolant;
+-  test-27: \"quoted\"/interpolant;
+-  test-28: \"quoted\"/interpolant;
++  test-26: \"quoted\" /interpolant;
++  test-27: \"quoted\"/ interpolant;
++  test-28: \"quoted\" / interpolant;
+   test-29: \"quoted\"/lschema_ritlp;
+   test-30: \"quoted\"/lschema_ritlp;
+   test-31: \"quoted\"/lschema_ritlp;
+   test-32: \"quoted\"/lschema_ritlp;
+   test-33: \"quoted\"/litlp_rschema;
+-  test-34: \"quoted\"/litlp_rschema;
+-  test-35: \"quoted\"/litlp_rschema;
+-  test-36: \"quoted\"/litlp_rschema;
++  test-34: \"quoted\" /litlp_rschema;
++  test-35: \"quoted\"/ litlp_rschema;
++  test-36: \"quoted\" / litlp_rschema;
+   test-37: interpolant/interpolant;
+-  test-38: interpolant/interpolant;
+-  test-39: interpolant/interpolant;
+-  test-40: interpolant/interpolant;
++  test-38: interpolant /interpolant;
++  test-39: interpolant/ interpolant;
++  test-40: interpolant / interpolant;
+   test-41: interpolant/lschema_ritlp;
+-  test-42: interpolant/lschema_ritlp;
+-  test-43: interpolant/lschema_ritlp;
+-  test-44: interpolant/lschema_ritlp;
++  test-42: interpolant /lschema_ritlp;
++  test-43: interpolant/ lschema_ritlp;
++  test-44: interpolant / lschema_ritlp;
+   test-45: interpolant/litlp_rschema;
+-  test-46: interpolant/litlp_rschema;
+-  test-47: interpolant/litlp_rschema;
+-  test-48: interpolant/litlp_rschema;
++  test-46: interpolant /litlp_rschema;
++  test-47: interpolant/ litlp_rschema;
++  test-48: interpolant / litlp_rschema;
+   test-49: lschema_ritlp/lschema_ritlp;
+-  test-50: lschema_ritlp/lschema_ritlp;
+-  test-51: lschema_ritlp/lschema_ritlp;
+-  test-52: lschema_ritlp/lschema_ritlp;
++  test-50: lschema_ritlp /lschema_ritlp;
++  test-51: lschema_ritlp/ lschema_ritlp;
++  test-52: lschema_ritlp / lschema_ritlp;
+   test-53: lschema_ritlp/litlp_rschema;
+-  test-54: lschema_ritlp/litlp_rschema;
+-  test-55: lschema_ritlp/litlp_rschema;
+-  test-56: lschema_ritlp/litlp_rschema;
++  test-54: lschema_ritlp /litlp_rschema;
++  test-55: lschema_ritlp/ litlp_rschema;
++  test-56: lschema_ritlp / litlp_rschema;
+   test-57: litlp_rschema/litlp_rschema;
+-  test-58: litlp_rschema/litlp_rschema;
+-  test-59: litlp_rschema/litlp_rschema;
+-  test-60: litlp_rschema/litlp_rschema;
++  test-58: litlp_rschema /litlp_rschema;
++  test-59: litlp_rschema/ litlp_rschema;
++  test-60: litlp_rschema / litlp_rschema;
+ }
+ "
+
+
+
+ 11) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_308 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+No error message produced.
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-"WARNING on line 7, column 2 of /sass/spec/libsass-issues/issue_308/input.scss:
+-You probably don't mean to use the color value `orange' in interpolation here."
++""
+
+
+
+ 12) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_713/and [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid function name \"and\"."
++"Error in compile_file(input, opts) : Error: Invalid function name \"and\"."
+
+
+
+ 13) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/094_test_long_extendee_runs_unification [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 14) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/20_escapes_literal_uppercase/01_inline [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,9 @@
+ ".result {
+-  output: \\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ;
+-  output: \\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ;
+-  output: \"[\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ]\";
+-  output: \"\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ\";
+-  output: \"\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ\";
+-  output: \"['\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ']\";
++  output: \\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z;
++  output: \\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z;
++  output: \"[\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z]\";
++  output: \"\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z\";
++  output: \"\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z\";
++  output: \"['\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z']\";
+ }
+ "
+
+
+
+ 15) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/multiplication/color_color [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 16) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/division/dimensions/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -8,80 +8,80 @@
+   test-7: 10/ 10px;
+   test-8: 10 / 10px;
+   test-9: 10/10px;
+-  test-10: 10/10px;
+-  test-11: 10/10px;
+-  test-12: 10/10px;
+-  test-13: 10/1 0px;
+-  test-14: 10/1 0px;
+-  test-15: 10/1 0px;
+-  test-16: 10/1 0px;
+-  test-17: 10/10 px;
+-  test-18: 10/10 px;
+-  test-19: 10/10 px;
+-  test-20: 10/10 px;
+-  test-21: 10/10 px;
+-  test-22: 10/10 px;
+-  test-23: 10/10 px;
+-  test-24: 10/10 px;
++  test-10: 10 /10px;
++  test-11: 10/ 10px;
++  test-12: 10 / 10px;
++  test-13: 10/10px;
++  test-14: 10/10px;
++  test-15: 10/10px;
++  test-16: 10/10px;
++  test-17: 10/10px;
++  test-18: 10/10px;
++  test-19: 10/10px;
++  test-20: 10/10px;
++  test-21: 10/10px;
++  test-22: 10/10px;
++  test-23: 10/10px;
++  test-24: 10/10px;
+   test-25: 10px/10px;
+   test-26: 10px /10px;
+   test-27: 10px/ 10px;
+   test-28: 10px / 10px;
+   test-29: 10px/10px;
+-  test-30: 10px/10px;
+-  test-31: 10px/10px;
+-  test-32: 10px/10px;
+-  test-33: 10px/1 0px;
+-  test-34: 10px/1 0px;
+-  test-35: 10px/1 0px;
+-  test-36: 10px/1 0px;
+-  test-37: 10px/10 px;
+-  test-38: 10px/10 px;
+-  test-39: 10px/10 px;
+-  test-40: 10px/10 px;
+-  test-41: 10px/10 px;
+-  test-42: 10px/10 px;
+-  test-43: 10px/10 px;
+-  test-44: 10px/10 px;
++  test-30: 10px /10px;
++  test-31: 10px/ 10px;
++  test-32: 10px / 10px;
++  test-33: 10px/10px;
++  test-34: 10px/10px;
++  test-35: 10px/10px;
++  test-36: 10px/10px;
++  test-37: 10px/10px;
++  test-38: 10px/10px;
++  test-39: 10px/10px;
++  test-40: 10px/10px;
++  test-41: 10px/10px;
++  test-42: 10px/10px;
++  test-43: 10px/10px;
++  test-44: 10px/10px;
+   test-45: 10px/10px;
+-  test-46: 10px/10px;
+-  test-47: 10px/10px;
+-  test-48: 10px/10px;
+-  test-49: 10px/1 0px;
+-  test-50: 10px/1 0px;
+-  test-51: 10px/1 0px;
+-  test-52: 10px/1 0px;
+-  test-53: 10px/10 px;
+-  test-54: 10px/10 px;
+-  test-55: 10px/10 px;
+-  test-56: 10px/10 px;
+-  test-57: 10px/10 px;
+-  test-58: 10px/10 px;
+-  test-59: 10px/10 px;
+-  test-60: 10px/10 px;
+-  test-61: 1 0px/1 0px;
+-  test-62: 1 0px/1 0px;
+-  test-63: 1 0px/1 0px;
+-  test-64: 1 0px/1 0px;
+-  test-65: 1 0px/10 px;
+-  test-66: 1 0px/10 px;
+-  test-67: 1 0px/10 px;
+-  test-68: 1 0px/10 px;
+-  test-69: 1 0px/10 px;
+-  test-70: 1 0px/10 px;
+-  test-71: 1 0px/10 px;
+-  test-72: 1 0px/10 px;
+-  test-73: 10 px/10 px;
+-  test-74: 10 px/10 px;
+-  test-75: 10 px/10 px;
+-  test-76: 10 px/10 px;
+-  test-77: 10 px/10 px;
+-  test-78: 10 px/10 px;
+-  test-79: 10 px/10 px;
+-  test-80: 10 px/10 px;
+-  test-81: 10 px/10 px;
+-  test-82: 10 px/10 px;
+-  test-83: 10 px/10 px;
+-  test-84: 10 px/10 px;
++  test-46: 10px /10px;
++  test-47: 10px/ 10px;
++  test-48: 10px / 10px;
++  test-49: 10px/10px;
++  test-50: 10px/10px;
++  test-51: 10px/10px;
++  test-52: 10px/10px;
++  test-53: 10px/10px;
++  test-54: 10px/10px;
++  test-55: 10px/10px;
++  test-56: 10px/10px;
++  test-57: 10px/10px;
++  test-58: 10px/10px;
++  test-59: 10px/10px;
++  test-60: 10px/10px;
++  test-61: 10px/10px;
++  test-62: 10px/10px;
++  test-63: 10px/10px;
++  test-64: 10px/10px;
++  test-65: 10px/10px;
++  test-66: 10px/10px;
++  test-67: 10px/10px;
++  test-68: 10px/10px;
++  test-69: 10px/10px;
++  test-70: 10px/10px;
++  test-71: 10px/10px;
++  test-72: 10px/10px;
++  test-73: 10px/10px;
++  test-74: 10px /10px;
++  test-75: 10px/ 10px;
++  test-76: 10px / 10px;
++  test-77: 10px/10px;
++  test-78: 10px /10px;
++  test-79: 10px/ 10px;
++  test-80: 10px / 10px;
++  test-81: 10px/10px;
++  test-82: 10px/10px;
++  test-83: 10px/10px;
++  test-84: 10px/10px;
+ }
+ "
+
+
+
+ 17) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1405 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -25,7 +25,7 @@
+   test-5: -1_em--_--e0;
+   test-6: -1_em--_--e0__;
+   test-6: -1_em--_--e0__;
+-  test-7: -1e_em--_--e0;
+-  test-7: -1e_em--_--e0;
++  test-7: -1\\65 _em--_--e0;
++  test-7: -1\\65 _em--_--e0;
+ }
+ "
+
+
+
+ 18) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_963/selector-functions/replace/not [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,5 +1,5 @@
+ ".not {
+-  a: :not(.bar);
++  a: :not(.foo):not(.bar);
+   b: .bar;
+ }
+ "
+
+
+
+ 19) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/arglists/can-end-with-comma/error-mixin-3 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"...n-error($a,$b, \": expected variable (e.g. $foo), was \"{\""
++"Error: Invalid CSS after \"...en-error($a,$b,\": expected variable (e.g. $foo), was \"{\""
+
+
+
+ 20) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/invalid_binary_operator/lt [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \")\"."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+ 21) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_2446 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid UTF-8 character \"\\xE5\""
++"Error in compile_file(input, opts) : Error: Invalid UTF-8 sequence"
+
+
+
+ 22) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/invalid-operation/times [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 23) Failure:
+SassSpec::Test#test__sass-spec/spec/css/moz_document/multi_function [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+No error message produced.
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-"DEPRECATION WARNING on line 1, column 1 of /sass/spec/css/moz_document/multi_function/input.scss:
+-@-moz-document is deprecated and support will be removed from Sass in a future"
++""
+
+
+
+ 24) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/semicolon/debug [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 25) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/17_escapes_literal_lowercase/05_variable_quoted_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,13 +1,23 @@
+ ".result {
+-  dquoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz\";
+-  dquoted: \"[\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz]\";
+-  dquoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz\";
+-  dquoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz\";
+-  dquoted: \"['\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz']\";
+-  squoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz\";
+-  squoted: \"[\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz]\";
+-  squoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz\";
+-  squoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz\";
+-  squoted: \"['\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz']\";
++  dquoted: \"\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z\";
++  dquoted: \"[\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z]\";
++  dquoted: \"\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z\";
++  dquoted: \"\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z\";
++  dquoted: \"['\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z']\";
++  squoted: \"\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z\";
++  squoted: \"[\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z]\";
++  squoted: \"\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z\";
++  squoted: \"\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z\";
++  squoted: \"['\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z']\";
+ }
+ "
+
+
+
+ 26) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/scss-tests/118_test_parent_selector_with_parent_and_subject [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"bar foo.baz! .bip {
++"bar foo.baz {
+   c: d;
+ }
+ "
+
+
+
+ 27) Failure:
+SassSpec::Test#test__sass-spec/spec/css/moz_document/functions/interpolated [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -8,7 +8,7 @@
+     type: unquoted partial url;
+   }
+ }
+-@-moz-document url(\"sass-lang.com\") {
++@-moz-document url(\"\#{sa + ss}-lang.com\") {
+   a {
+     type: quoted partial url;
+   }
+
+
+
+ 28) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_245443 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid UTF-8 character \"\\x8A\""
++"Error in compile_file(input, opts) : Error: Invalid UTF-8 sequence"
+
+
+
+ 29) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2023/type-selector-id [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 30) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/invalid-operation/sub [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Incompatible units: 'px' and ''."
++"Error: Incompatible units: 'px*px' and 'px'."
+
+
+
+ 31) Failure:
+SassSpec::Test#test__sass-spec/spec/core_functions/rgba/multi_argument_var [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: overloaded function `rgba` given wrong number of arguments
+        on line 3:6 of /sass/spec/core_functions/rgba/multi_argument_var/input.scss
+>>   b: rgba(var(--foo), 3, 0.4);
+
+   -----^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+ 32) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/semicolon/variable [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 33) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1231 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,5 +1,4 @@
+-"@charset \"UTF-8\";
+-div::before {
+-  content: \"\xEE\x98\x80\";
++"div::before {
++  content: \"\\e600\";
+ }
+ "
+
+
+
+ 34) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/subtract/strings/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -10,7 +10,7 @@
+   test-9: literal-interpolant;
+   test-10: literal -interpolant;
+   test-11: literal- interpolant;
+-  test-12: literal-interpolant;
++  test-12: literal - interpolant;
+   test-13: literal-lschema_ritlp;
+   test-14: literal -lschema_ritlp;
+   test-15: literal- lschema_ritlp;
+@@ -18,46 +18,46 @@
+   test-17: literal-litlp_rschema;
+   test-18: literal -litlp_rschema;
+   test-19: literal- litlp_rschema;
+-  test-20: literal-litlp_rschema;
++  test-20: literal - litlp_rschema;
+   test-21: \"quoted\"-\"quoted\";
+   test-22: \"quoted\"-\"quoted\";
+   test-23: \"quoted\"-\"quoted\";
+   test-24: \"quoted\"-\"quoted\";
+-  test-25: \"quoted\" -interpolant;
++  test-25: \"quoted\"-interpolant;
+   test-26: \"quoted\" -interpolant;
+-  test-27: \"quoted\"-interpolant;
+-  test-28: \"quoted\"-interpolant;
++  test-27: \"quoted\"- interpolant;
++  test-28: \"quoted\" - interpolant;
+   test-29: \"quoted\" -lschema_ritlp;
+   test-30: \"quoted\" -lschema_ritlp;
+   test-31: \"quoted\"-lschema_ritlp;
+   test-32: \"quoted\"-lschema_ritlp;
+-  test-33: \"quoted\" -litlp_rschema;
++  test-33: \"quoted\"-litlp_rschema;
+   test-34: \"quoted\" -litlp_rschema;
+-  test-35: \"quoted\"-litlp_rschema;
+-  test-36: \"quoted\"-litlp_rschema;
++  test-35: \"quoted\"- litlp_rschema;
++  test-36: \"quoted\" - litlp_rschema;
+   test-37: interpolant-interpolant;
+   test-38: interpolant -interpolant;
+   test-39: interpolant- interpolant;
+-  test-40: interpolant-interpolant;
++  test-40: interpolant - interpolant;
+   test-41: interpolant-lschema_ritlp;
+   test-42: interpolant -lschema_ritlp;
+   test-43: interpolant- lschema_ritlp;
+-  test-44: interpolant-lschema_ritlp;
++  test-44: interpolant - lschema_ritlp;
+   test-45: interpolant-litlp_rschema;
+   test-46: interpolant -litlp_rschema;
+   test-47: interpolant- litlp_rschema;
+-  test-48: interpolant-litlp_rschema;
++  test-48: interpolant - litlp_rschema;
+   test-49: lschema_ritlp-lschema_ritlp;
+   test-50: lschema_ritlp -lschema_ritlp;
+   test-51: lschema_ritlp- lschema_ritlp;
+-  test-52: lschema_ritlp-lschema_ritlp;
++  test-52: lschema_ritlp - lschema_ritlp;
+   test-53: lschema_ritlp-litlp_rschema;
+   test-54: lschema_ritlp -litlp_rschema;
+   test-55: lschema_ritlp- litlp_rschema;
+-  test-56: lschema_ritlp-litlp_rschema;
++  test-56: lschema_ritlp - litlp_rschema;
+   test-57: litlp_rschema-litlp_rschema;
+   test-58: litlp_rschema -litlp_rschema;
+   test-59: litlp_rschema- litlp_rschema;
+-  test-60: litlp_rschema-litlp_rschema;
++  test-60: litlp_rschema - litlp_rschema;
+ }
+ "
+
+
+
+ 35) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/mismatched_range/gt_lt [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \")\"."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+ 36) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2235/not-empty [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,7 +1,7 @@
+-"@media all and (min-width: 100px) {
++"@import \"https://example.org\";
++@media all and (min-width: 100px) {
+   a {
+     b: c;
+   }
+-  @import \"https://example.org\";
+ }
+ "
+
+
+
+ 37) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/096_test_long_extender_runs_unification [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"ns|*.foo.bar {
++"ns|*.foo.bar, ns|a.bar.baz {
+   a: b;
+ }
+ "
+
+
+
+ 38) Failure:
+SassSpec::Test#test__sass-spec/spec/scss/ie-backslash [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+ "div {
+-  background-color: #cc0000 \\9 ;
++  background-color: #cc0000 \\9;
+ }
+ "
+
+
+
+ 39) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/logic_eq/dimensions/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -3,85 +3,85 @@
+   test-2: true;
+   test-3: true;
+   test-4: true;
+-  test-5: false;
+-  test-6: false;
+-  test-7: false;
+-  test-8: false;
+-  test-9: false;
+-  test-10: false;
+-  test-11: false;
+-  test-12: false;
+-  test-13: false 0px;
+-  test-14: false 0px;
+-  test-15: false 0px;
+-  test-16: false 0px;
+-  test-17: true px;
+-  test-18: true px;
+-  test-19: true px;
+-  test-20: true px;
+-  test-21: true px;
+-  test-22: true px;
+-  test-23: true px;
+-  test-24: true px;
++  test-5: true;
++  test-6: true;
++  test-7: true;
++  test-8: true;
++  test-9: 10==10px;
++  test-10: 10 ==10px;
++  test-11: 10== 10px;
++  test-12: 10 == 10px;
++  test-13: false0px;
++  test-14: false0px;
++  test-15: false0px;
++  test-16: false0px;
++  test-17: truepx;
++  test-18: truepx;
++  test-19: truepx;
++  test-20: truepx;
++  test-21: truepx;
++  test-22: truepx;
++  test-23: truepx;
++  test-24: truepx;
+   test-25: true;
+   test-26: true;
+   test-27: true;
+   test-28: true;
+-  test-29: false;
+-  test-30: false;
+-  test-31: false;
+-  test-32: false;
+-  test-33: false 0px;
+-  test-34: false 0px;
+-  test-35: false 0px;
+-  test-36: false 0px;
+-  test-37: false px;
+-  test-38: false px;
+-  test-39: false px;
+-  test-40: false px;
+-  test-41: false px;
+-  test-42: false px;
+-  test-43: false px;
+-  test-44: false px;
+-  test-45: true;
+-  test-46: true;
+-  test-47: true;
+-  test-48: true;
+-  test-49: false 0px;
+-  test-50: false 0px;
+-  test-51: false 0px;
+-  test-52: false 0px;
+-  test-53: false px;
+-  test-54: false px;
+-  test-55: false px;
+-  test-56: false px;
+-  test-57: false px;
+-  test-58: false px;
+-  test-59: false px;
+-  test-60: false px;
+-  test-61: 1 false 0px;
+-  test-62: 1 false 0px;
+-  test-63: 1 false 0px;
+-  test-64: 1 false 0px;
+-  test-65: 1 false px;
+-  test-66: 1 false px;
+-  test-67: 1 false px;
+-  test-68: 1 false px;
+-  test-69: 1 false px;
+-  test-70: 1 false px;
+-  test-71: 1 false px;
+-  test-72: 1 false px;
+-  test-73: 10 false px;
+-  test-74: 10 false px;
+-  test-75: 10 false px;
+-  test-76: 10 false px;
+-  test-77: 10 false px;
+-  test-78: 10 false px;
+-  test-79: 10 false px;
+-  test-80: 10 false px;
+-  test-81: 10 false px;
+-  test-82: 10 false px;
+-  test-83: 10 false px;
+-  test-84: 10 false px;
++  test-29: 10px==10px;
++  test-30: 10px ==10px;
++  test-31: 10px== 10px;
++  test-32: 10px == 10px;
++  test-33: false0px;
++  test-34: false0px;
++  test-35: false0px;
++  test-36: false0px;
++  test-37: truepx;
++  test-38: truepx;
++  test-39: truepx;
++  test-40: truepx;
++  test-41: truepx;
++  test-42: truepx;
++  test-43: truepx;
++  test-44: truepx;
++  test-45: 10px==10px;
++  test-46: 10px ==10px;
++  test-47: 10px== 10px;
++  test-48: 10px == 10px;
++  test-49: 10false0px;
++  test-50: 10false0px;
++  test-51: 10false0px;
++  test-52: 10false0px;
++  test-53: 10falsepx;
++  test-54: 10falsepx;
++  test-55: 10falsepx;
++  test-56: 10falsepx;
++  test-57: 10falsepx;
++  test-58: 10falsepx;
++  test-59: 10falsepx;
++  test-60: 10falsepx;
++  test-61: 10false0px;
++  test-62: 10false0px;
++  test-63: 10false0px;
++  test-64: 10false0px;
++  test-65: 10falsepx;
++  test-66: 10falsepx;
++  test-67: 10falsepx;
++  test-68: 10falsepx;
++  test-69: 10falsepx;
++  test-70: 10falsepx;
++  test-71: 10falsepx;
++  test-72: 10falsepx;
++  test-73: 10px==10px;
++  test-74: 10px ==10px;
++  test-75: 10px== 10px;
++  test-76: 10px == 10px;
++  test-77: 10px==10px;
++  test-78: 10px ==10px;
++  test-79: 10px== 10px;
++  test-80: 10px == 10px;
++  test-81: 10pfalsepx;
++  test-82: 10pfalsepx;
++  test-83: 10pfalsepx;
++  test-84: 10pfalsepx;
+ }
+ "
+
+
+
+ 40) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_2155 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-"WARNING on line 2, column 5 of /sass/spec/libsass-issues/issue_2155/input.scss:
+-You probably don't mean to use the color value `#ff0' in interpolation here."
++"Error: Invalid CSS after \"&\": expected selector, was \".#ff0\""
+
+
+
+ 41) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/error/too_many_hex_digits [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 42) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1079 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 43) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/051_test_element_unification_with_namespaceless_universal_target [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"-a *.foo {
++"-a *.foo, -a ns|a {
+   a: b;
+ }
+ "
+
+
+
+ 44) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/extend-self [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-".c, .a .b .c, .a .c .b {
++".c, .a .b .c, .a .c .b, .a .b .c, .a .b .c .b, .a .c .b .b, .a .c .b {
+   x: y;
+ }
+ "
+
+
+
+ 45) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_963/selector-functions/is_superselector/not_is_superselector_of_superset [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,5 +1,5 @@
+ "test {
+-  a: true;
+-  b: true;
++  a: false;
++  b: false;
+ }
+ "
+
+
+
+ 46) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_152-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 47) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/logic_eq/mixed/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -3,22 +3,22 @@
+   test-2: true;
+   test-3: true;
+   test-4: true;
+-  test-5: false;
+-  test-6: false;
+-  test-7: false;
+-  test-8: false;
+-  test-9: false;
+-  test-10: false;
+-  test-11: false;
+-  test-12: false;
++  test-5: true;
++  test-6: true;
++  test-7: true;
++  test-8: true;
++  test-9: true;
++  test-10: true;
++  test-11: true;
++  test-12: true;
+   test-13: false;
+   test-14: false;
+   test-15: false;
+   test-16: false;
+-  test-17: false;
+-  test-18: false;
+-  test-19: false;
+-  test-20: false;
++  test-17: 10==itpl;
++  test-18: 10 ==itpl;
++  test-19: 10== itpl;
++  test-20: 10 == itpl;
+   test-21: true;
+   test-22: true;
+   test-23: true;
+@@ -31,10 +31,10 @@
+   test-30: false;
+   test-31: false;
+   test-32: false;
+-  test-33: false;
+-  test-34: false;
+-  test-35: false;
+-  test-36: false;
++  test-33: 10%==itpl;
++  test-34: 10% ==itpl;
++  test-35: 10%== itpl;
++  test-36: 10% == itpl;
+   test-37: true;
+   test-38: true;
+   test-39: true;
+@@ -43,21 +43,21 @@
+   test-42: false;
+   test-43: false;
+   test-44: false;
+-  test-45: false;
+-  test-46: false;
+-  test-47: false;
+-  test-48: false;
++  test-45: 10px==itpl;
++  test-46: 10px ==itpl;
++  test-47: 10px== itpl;
++  test-48: 10px == itpl;
+   test-49: true;
+   test-50: true;
+   test-51: true;
+   test-52: true;
+-  test-53: false;
+-  test-54: false;
+-  test-55: false;
+-  test-56: false;
+-  test-57: true;
+-  test-58: true;
+-  test-59: true;
+-  test-60: true;
++  test-53: #AAA==itpl;
++  test-54: #AAA ==itpl;
++  test-55: #AAA== itpl;
++  test-56: #AAA == itpl;
++  test-57: itpl==itpl;
++  test-58: itpl ==itpl;
++  test-59: itpl== itpl;
++  test-60: itpl == itpl;
+ }
+ "
+
+
+
+ 48) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/errors/import/url/mixin/control-else/inside [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"foo {
+-  @import url(\"http://www.libsass.org\");
++"@import url(\"http://www.libsass.org\");
++foo {
+ }
+ "
+
+
+
+ 49) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2055 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,10 +1,10 @@
+ ":not(.thing) {
+   color: red;
+ }
+-:not(.thing[disabled]):not([disabled]:not(.thing[disabled])):not([disabled]:has(:not(.thing[disabled]))) {
++:not(.thing[disabled]) {
+   background: blue;
+ }
+-:has(:not(.thing[disabled]):not([disabled]:not(.thing[disabled])):not([disabled]:has(:not(.thing[disabled])))) {
++:has(:not(.thing[disabled])) {
+   background: blue;
+ }
+ "
+
+
+
+ 50) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/addition/numbers/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -3,41 +3,41 @@
+   test-2: 10 +10;
+   test-3: 20;
+   test-4: 20;
+-  test-5: 1010;
+-  test-6: 1010;
+-  test-7: 1010;
+-  test-8: 1010;
+-  test-9: 11 0;
+-  test-10: 11 0;
+-  test-11: 11 0;
+-  test-12: 11 0;
+-  test-13: 1010;
+-  test-14: 1010;
+-  test-15: 1010;
+-  test-16: 1010;
+-  test-17: 1010;
+-  test-18: 1010;
+-  test-19: 1010;
+-  test-20: 1010;
+-  test-21: 101 0;
+-  test-22: 101 0;
+-  test-23: 101 0;
+-  test-24: 101 0;
+-  test-25: 1010;
+-  test-26: 1010;
+-  test-27: 1010;
+-  test-28: 1010;
+-  test-29: 1 01 0;
+-  test-30: 1 01 0;
+-  test-31: 1 01 0;
+-  test-32: 1 01 0;
+-  test-33: 1 010;
+-  test-34: 1 010;
+-  test-35: 1 010;
+-  test-36: 1 010;
+-  test-37: 1010;
+-  test-38: 1010;
+-  test-39: 1010;
+-  test-40: 1010;
++  test-5: 10+10;
++  test-6: 10 +10;
++  test-7: 10+ 10;
++  test-8: 10 + 10;
++  test-9: 110;
++  test-10: 110;
++  test-11: 110;
++  test-12: 110;
++  test-13: 10+10;
++  test-14: 10 +10;
++  test-15: 10+ 10;
++  test-16: 10 + 10;
++  test-17: 10+10;
++  test-18: 10 +10;
++  test-19: 10+ 10;
++  test-20: 10 + 10;
++  test-21: 10+10;
++  test-22: 10 +10;
++  test-23: 10+ 10;
++  test-24: 10 + 10;
++  test-25: 10+10;
++  test-26: 10 +10;
++  test-27: 10+ 10;
++  test-28: 10 + 10;
++  test-29: 10+10;
++  test-30: 10 +10;
++  test-31: 10+ 10;
++  test-32: 10 + 10;
++  test-33: 10+10;
++  test-34: 10 +10;
++  test-35: 10+ 10;
++  test-36: 10 + 10;
++  test-37: 10+10;
++  test-38: 10 +10;
++  test-39: 10+ 10;
++  test-40: 10 + 10;
+ }
+ "
+
+
+
+ 51) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/mismatched_range/gte_lte [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \")\"."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+ 52) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/060_test_element_unification_with_namespaceless_element_target [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"-a a.foo {
++"-a a.foo, -a ns|a {
+   a: b;
+ }
+ "
+
+
+
+ 53) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/scss-tests/046_test_parent_selector_with_subject [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: property "bar" must be followed by a ':'
+        on line 2:3 of /sass/spec/scss-tests/046_test_parent_selector_with_subject/input.scss
+>>   bar &.baz! .bip {a: b}}
+
+   --^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+ 54) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/062_test_element_unification_with_namespaced_element_target [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"-a ns|a.foo {
++"-a ns|a {
+   a: b;
+ }
+ "
+
+
+
+ 55) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_221260 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"@H\#{\": expected expression (e.g. 1px, bold), was \"[[[[[[[[[[[[[[[...\""
++"Error in compile_file(input, opts) : Error: Code too deeply neested"
+
+
+
+ 56) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2023/type-selector-nr [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 57) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_963/selector-functions/is_superselector/nth_match_can_be_subselector [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,6 +1,6 @@
+ "test {
+-  a: true;
+-  b: true;
+-  c: true;
++  a: false;
++  b: false;
++  c: false;
+ }
+ "
+
+
+
+ 58) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/for-incompatible-units-fn [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Incompatible units: 'px' and '%'."
++"Error: Incompatible units: 'px' and '"
+
+
+
+ 59) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1694/quoted-right-paren [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) : Error: unclosed parenthesis
+        on line 2:61 of /sass/spec/libsass-issues/issue_1694/quoted-right-paren/input.scss
+>> XImageTransform.Microsoft.Alpha(opacity=20\);
+
+   ------------------------------------------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+ 60) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/11_escaped_literal/05_variable_quoted_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,13 +1,13 @@
+ ".result {
+-  dquoted: \"l\\\\\\\\iteral\";
+-  dquoted: \"[l\\\\\\\\iteral]\";
+-  dquoted: \"l\\\\\\\\iteral\";
+-  dquoted: \"l\\\\\\\\iteral\";
+-  dquoted: \"['l\\\\\\\\iteral']\";
+-  squoted: \"l\\\\\\\\iteral\";
+-  squoted: \"[l\\\\\\\\iteral]\";
+-  squoted: \"l\\\\\\\\iteral\";
+-  squoted: \"l\\\\\\\\iteral\";
+-  squoted: \"['l\\\\\\\\iteral']\";
++  dquoted: \"l\\\\\\\\ite\\\\ral\";
++  dquoted: \"[l\\\\\\\\ite\\\\ral]\";
++  dquoted: \"l\\\\\\\\ite\\\\ral\";
++  dquoted: \"l\\\\\\\\ite\\\\ral\";
++  dquoted: \"['l\\\\\\\\ite\\\\ral']\";
++  squoted: \"l\\\\\\\\ite\\\\ral\";
++  squoted: \"[l\\\\\\\\ite\\\\ral]\";
++  squoted: \"l\\\\\\\\ite\\\\ral\";
++  squoted: \"l\\\\\\\\ite\\\\ral\";
++  squoted: \"['l\\\\\\\\ite\\\\ral']\";
+ }
+ "
+
+
+
+ 61) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/error/minus_number_minus_ident [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 62) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1093/argument/mixin-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"@mixin foo($bar:\#{\": expected expression (e.g. 1px, bold), was \"}) {\""
++"Error: Invalid CSS after \"@mixin foo($bar:\": expected expression (e.g. 1px, bold), was \"\#{}) {\""
+
+
+
+ 63) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1322 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,6 +1,6 @@
+ "@import url(foo.css) (min-width: 400px);
+ @import url(foo.css) (min-width: 400px);
+ @import url(foo.css) (min-width: 400px);
+-@import url(foo.css) (min-width: 400px);
+-@import url(foo.css) (min-width: 400px);
++@import url(foo.css) (min-width:400px);
++@import url(foo.css) (min-width:400px);
+ "
+
+
+
+ 64) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_221292 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) : Error: Code too deeply neested
+        on line 1 of /sass/spec/libsass-issues/issue_221292/input.scss
+>> ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((
+   ------------------------------------------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+ 65) Failure:
+SassSpec::Test#test__sass-spec/spec/core_functions/hsla/multi_argument_var [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Function hsla is missing argument $alpha.
+        on line 3 of /sass/spec/core_functions/hsla/multi_argument_var/input.scss
+>>   b: hsla(var(--foo), 3);
+
+   -----^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+ 66) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/inconsistent_indentation [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 4 spaces."
++"Error: Invalid CSS after \"    b: c; }\": expected 1 selector or at-rule, was \"{\""
+
+
+
+ 67) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/20_escapes_literal_uppercase/05_variable_quoted_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,13 +1,13 @@
+ ".result {
+-  dquoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ\";
+-  dquoted: \"[\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ]\";
+-  dquoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ\";
+-  dquoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ\";
+-  dquoted: \"['\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ']\";
+-  squoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ\";
+-  squoted: \"[\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ]\";
+-  squoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ\";
+-  squoted: \"\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ\";
+-  squoted: \"['\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ']\";
++  dquoted: \"\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z\";
++  dquoted: \"[\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z]\";
++  dquoted: \"\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z\";
++  dquoted: \"\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z\";
++  dquoted: \"['\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z']\";
++  squoted: \"\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z\";
++  squoted: \"[\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z]\";
++  squoted: \"\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z\";
++  squoted: \"\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z\";
++  squoted: \"['\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z']\";
+ }
+ "
+
+
+
+ 68) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/extend/placeholder/missing [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: \".baz\" failed to @extend \"%foo\"."
++"Error: \".baz\" failed to @extend \"0.000000oo\"."
+
+
+
+ 69) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1026 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,9 @@
+ "div a {
+   /**
+-   * a
+-   * multiline
+-   * comment
+-   */
++     * a
++     * multiline
++     * comment
++     */
+   top: 10px;
+ }
+ "
+
+
+
+ 70) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/error/question_mark_after_minus [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \";\"."
++"Error: Invalid CSS after \"  a: u+abc-de\": expected expression (e.g. 1px, bold), was \"?;\""
+
+
+
+ 71) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/addition/number_color [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 72) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/14_escapes_literal_numbers/04_variable_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ ".result {
+-  output: \\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ;
+-  output: [\\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ];
+-  output: \\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ;
+-  output: \\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ;
+-  output: ['\\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 '];
++  output: \\1\\2\\3\\4\\5\\6\\7\\8\\9;
++  output: [\\1\\2\\3\\4\\5\\6\\7\\8\\9];
++  output: \\1\\2\\3\\4\\5\\6\\7\\8\\9;
++  output: \\1\\2\\3\\4\\5\\6\\7\\8\\9;
++  output: ['\\1\\2\\3\\4\\5\\6\\7\\8\\9'];
+ }
+ "
+
+
+
+ 73) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/031_test_universal_unification_with_namespaced_universal_target [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"-a ns|*.foo {
++"-a ns|* {
+   a: b;
+ }
+ "
+
+
+
+ 74) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/extend-tests/202_test_extend_with_subject_retains_subject_on_target [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Invalid CSS after ".": expected 1 selector or at-rule, was ".foo! .bar {a: b}"
+        on line 1:1 of /sass/spec/extend-tests/202_test_extend_with_subject_retains_subject_on_target/input.scss
+>> .foo! .bar {a: b}
+
+   ^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+ 75) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_245446 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid UTF-8 character \"\\xDF\""
++"Error in compile_file(input, opts) : Error: Invalid UTF-8 sequence"
+
+
+
+ 76) Failure:
+SassSpec::Test#test__sass-spec/spec/values/identifiers/escape/normalize [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,14 +1,14 @@
+ "@charset \"UTF-8\";
+ .normalize {
+-  name-start-char: ax ax ax ax ax ax;
+-  name-start-char-non-hex: xx;
+-  name-start-char-non-ascii: \xE2\x98\x83x \xE2\x98\x83x \xE2\x98\x83x;
+-  name-char-in-middle: a-x a-x;
+-  name-char-at-start: \\-x \\-x;
+-  non-printable: \\0 x \\1 x \\2 x \\3 x \\4 x \\5 x \\6 x \\7 x \\8 x \\b x \\e x \\f x \\10 x \\11 x \\12 x \\13 x \\14 x \\15 x \\16 x \\17 x \\18 x \\19 x \\1a x \\1b x \\1c x \\1d x \\1e x \\\x1Fx \\7f x;
+-  newline: \\a x \\c x \\d x;
++  name-start-char: ax \\61x \\61 x \\061x \\0061x \\00061x;
++  name-start-char-non-hex: \\xx;
++  name-start-char-non-ascii: \xE2\x98\x83x \\\xE2\x98\x83x \\2603x;
++  name-char-in-middle: a\\2dx a\\-x;
++  name-char-at-start: \\2dx \\-x;
++  non-printable: \\0x \\1x \\2x \\3x \\4x \\5x \\6x \\7x \\8x \\Bx \\Ex \\Fx \\10x \\11x \\12x \\13x \\14x \\15x \\16x \\17x \\18x \\19x \\1Ax \\1Bx \\1Cx \\1Dx \\1Ex \\1Fx \\7Fx;
++  newline: \\ax \\cx \\dx;
+   name-char-interpolation-beginning: \\-foo;
+-  name-char-interpolation-middle: foo-bar;
+-  name-char-interpolation-end: foo-;
++  name-char-interpolation-middle: foo\\-bar;
++  name-char-interpolation-end: foo\\-;
+ }
+ "
+
+
+
+ 77) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_442-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,5 +1,5 @@
+ "foo {
+-  a: 10 rem;
++  a: 10rem;
+   a: 10rem;
+   a: false;
+ }
+
+
+
+ 78) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1798/3 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Invalid CSS after "  content:": expected expression (e.g. 1px, bold), was '"#{ a /*#{"}*/ }";'
+        on line 2:12 of /sass/spec/libsass-issues/issue_1798/3/input.scss
+>>   content: "#{ a /*#{"}*/ }";
+
+   -----------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+ 79) Failure:
+SassSpec::Test#test__sass-spec/spec/core_functions/join/error/positional_and_named [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: wrong number of arguments (5 for 2..4) for `join'"
++"Error: wrong number of arguments (6 for 4) for `join'"
+
+
+
+ 80) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1418/static-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Plain CSS function missing doesn't support keyword arguments"
++"Error: Function missing doesn't support keyword arguments"
+
+
+
+ 81) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/error/no_digits [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Expected hex digit or \"?\"."
++"Error: Invalid CSS after \"  a: U+\": expected expression (e.g. 1px, bold), was \";\""
+
+
+
+ 82) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2051 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 83) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass/interpolated-function-call-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+ "div {
+-  color: foo(a, 3, c);
++  color: fooa, 3, c;
+ }
+ "
+
+
+
+ 84) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/question_mark [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -4,8 +4,8 @@
+   six-digit-question-only: U+??????;
+   two-digit-half-question: U+A?;
+   six-digit-half-question: U+123???;
+-  followed-by-ident: U+A? BCDE;
+-  followed-by-minus: U+A? -BCDE;
++  followed-by-ident: U+A?BCDE;
++  followed-by-minus: U+A?-BCDE;
+   followed-by-number: U+A?-1234;
+ }
+ "
+
+
+
+ 85) Failure:
+SassSpec::Test#test__sass-spec/spec/types-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -18,7 +18,7 @@
+   color: aqua;
+   color: aqua;
+   color: aqua;
+-  width: 33;
++  width: 3+3;
+   thing: url(number);
+ }
+ "
+
+
+
+ 86) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/semicolon/include [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"\": expected expression (e.g. 1px, bold), was \";\""
++"Error in compile_file(input, opts) : Error: no mixin named foo"
+
+
+
+ 87) Failure:
+SassSpec::Test#test__sass-spec/spec/basic/23_basic_value_interpolation-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ "div {
+   a: helloworld;
+   a: hello world;
+-  b: 12 3;
+-  b: list;
++  b: 123;
++  b: string;
+   b: 123;
+   b: string;
+ }
+
+
+
+ 88) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/invalid_binary_operator/in_subexpression [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \")\"."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+ 89) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass/interpolated-urls-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,10 +1,10 @@
+ "div {
+-  background-image: \"url(\" /static_loc/ \"img/beta.png)\";
++  background-image: \"url(\"/static_loc/\"img/beta.png)\";
+ }
+ span {
+   background-image: url(/static_loc/img/beta.png);
+ }
+ fudge {
+-  walnuts: blix \"fludge\" hey now123;
++  walnuts: blix \"fludge\"hey now123;
+ }
+ "
+
+
+
+ 90) Failure:
+SassSpec::Test#test__sass-spec/spec/nesting/parent_with_newline [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,5 +1,5 @@
+-".baz .foo,
+-.baz .bar {
++".baz .foo, .baz
++.bar {
+   color: red;
+ }
+ "
+
+
+
+ 91) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/invalid_comparison/range_gte [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Expected expression."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+ 92) Failure:
+SassSpec::Test#test__sass-spec/spec/directives/import/error/no_extension [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 93) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/malformed_expressions/at-warn/no-argument [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 94) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_602 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,17 +1,16 @@
+-"@charset \"UTF-8\";
+-#foo.\xC2\xBAr {
++"#foo.\\bar {
+   color: red;
+ }
+-#foo.b\\a r {
++#foo.b\\ar {
+   color: red;
+ }
+ #foo\\.bar {
+   color: red;
+ }
+-#foo\xC2\xBAr {
++#foo\\bar {
+   color: red;
+ }
+-#foo.bar {
++#fo\\o.bar {
+   color: red;
+ }
+ "
+
+
+
+ 95) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/subtraction/color_color [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+ 96) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/extend-tests/203_test_extend_with_subject_transfers_subject_to_target [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Invalid CSS after "...foo .bar {a: b}": expected 1 selector or at-rule, was ".bip .bap! {@extend"
+        on line 1:18 of /sass/spec/extend-tests/203_test_extend_with_subject_transfers_subject_to_target/input.scss
+>> a.foo .bar {a: b}
+
+   -----------------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+ 97) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/subtract/numbers/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -3,41 +3,41 @@
+   test-2: 10 -10;
+   test-3: 0;
+   test-4: 0;
+-  test-5: 10 -10;
++  test-5: 10-10;
+   test-6: 10 -10;
+-  test-7: 10-10;
+-  test-8: 10-10;
+-  test-9: 9 0;
+-  test-10: 10 -1 0;
+-  test-11: 9 0;
+-  test-12: 9 0;
+-  test-13: 10 -10;
++  test-7: 10- 10;
++  test-8: 10 - 10;
++  test-9: 90;
++  test-10: 10 -10;
++  test-11: 90;
++  test-12: 90;
++  test-13: 10-10;
+   test-14: 10 -10;
+-  test-15: 10-10;
+-  test-16: 10-10;
++  test-15: 10- 10;
++  test-16: 10 - 10;
+   test-17: 10-10;
+   test-18: 10 -10;
+   test-19: 10- 10;
+-  test-20: 10-10;
++  test-20: 10 - 10;
+   test-21: 10-10;
+-  test-22: 10 -1 0;
+-  test-23: 10- 1 0;
+-  test-24: 10-1 0;
++  test-22: 10 -10;
++  test-23: 10- 10;
++  test-24: 10 - 10;
+   test-25: 10-10;
+   test-26: 10 -10;
+   test-27: 10- 10;
+-  test-28: 10-10;
+-  test-29: 1 0-10;
+-  test-30: 1 0 -1 0;
+-  test-31: 1 0- 1 0;
+-  test-32: 1 0-1 0;
+-  test-33: 1 0-10;
+-  test-34: 1 0 -10;
+-  test-35: 1 0- 10;
+-  test-36: 1 0-10;
++  test-28: 10 - 10;
++  test-29: 10-10;
++  test-30: 10 -10;
++  test-31: 10- 10;
++  test-32: 10 - 10;
++  test-33: 10-10;
++  test-34: 10 -10;
++  test-35: 10- 10;
++  test-36: 10 - 10;
+   test-37: 10-10;
+   test-38: 10 -10;
+   test-39: 10- 10;
+-  test-40: 10-10;
++  test-40: 10 - 10;
+ }
+ "
+
+
+
+ 98) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/extend-loop [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -5,7 +5,7 @@
+   .z1.b1, .z1.x1.y1.a1, .z1.x1.y1.c1, .z1.x1.y1.b1 {
+     x: y;
+   }
+-  .c1, .z1.b1, .z1.x1.y1.a1, .z1.x1.y1.c1 {
++  .c1, .z1.b1, .z1.x1.y1.a1, .z1.x1.y1.c1, .z1.x1.y1.b1 {
+     x: y;
+   }
+ }
+@@ -16,7 +16,7 @@
+   .c2, .z2.b2, .z2.x2.y2.a2, .z2.x2.y2.c2 {
+     x: y;
+   }
+-  .z2.b2, .z2.x2.y2.a2, .z2.x2.y2.c2, .z2.x2.y2.b2 {
++  .z2.b2, .z2.x2.y2.a2, .z2.x2.y2.c2 {
+     x: y;
+   }
+ }
+@@ -27,7 +27,7 @@
+   .x3.y3.a3, .x3.y3.c3, .x3.y3.z3.b3 {
+     x: y;
+   }
+-  .c3, .z3.b3, .z3.x3.y3.a3, .z3.x3.y3.c3 {
++  .c3, .z3.b3, .z3.x3.y3.a3, .z3.x3.y3.c3, .z3.x3.y3.b3 {
+     x: y;
+   }
+ }
+@@ -35,7 +35,7 @@
+   .z4.b4, .z4.x4.y4.a4, .z4.x4.y4.c4, .z4.x4.y4.b4 {
+     x: y;
+   }
+-  .c4, .z4.b4, .z4.x4.y4.a4, .z4.x4.y4.c4 {
++  .c4, .z4.b4, .z4.x4.y4.a4, .z4.x4.y4.c4, .z4.x4.y4.b4 {
+     x: y;
+   }
+   .x4.y4.a4, .x4.y4.c4, .x4.y4.z4.b4 {
+@@ -46,7 +46,7 @@
+   .c5, .z5.b5, .z5.x5.y5.a5, .z5.x5.y5.c5 {
+     x: y;
+   }
+-  .z5.b5, .z5.x5.y5.a5, .z5.x5.y5.c5, .z5.x5.y5.b5 {
++  .z5.b5, .z5.x5.y5.a5, .z5.x5.y5.c5 {
+     x: y;
+   }
+   .x5.y5.a5, .x5.y5.c5, .x5.y5.z5.b5 {
+@@ -60,7 +60,7 @@
+   .x6.y6.a6, .x6.y6.c6, .x6.y6.z6.b6 {
+     x: y;
+   }
+-  .z6.b6, .z6.x6.y6.a6, .z6.x6.y6.c6, .z6.x6.y6.b6 {
++  .z6.b6, .z6.x6.y6.a6, .z6.x6.y6.c6 {
+     x: y;
+   }
+ }
+
+
+
+ 99) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/fn-scale-color-1 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Expected $red to have a unit of % but got 0.5 for `scale-color'"
++"Error: Cannot specify HSL and RGB values for a color at the same time for `scale-color'"
+
+
+
+100) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/loop-for/numeric/lower_eval [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: \"foo\" is not an integer."
++"Error in compile_file(input, opts) : Error: \"foo\" is not an integer."
+
+
+
+101) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/multiplication/color_number [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+102) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/escaped_selector [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: ".bar" failed to @extend "\02e foo".
+       The selector "\02e foo" was not found.
+       Use "@extend \02e foo !optional" if the extend should be able to fail.
+        on line 7:15 of /sass/spec/extend-tests/escaped_selector/input.scss
+>> .bar {@extend \02e foo}
+
+   --------------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+103) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1739/interpolate/both-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+104) Failure:
+SassSpec::Test#test__sass-spec/spec/core_functions/join/error/positional [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: wrong number of arguments (5 for 2..4) for `join'"
++"Error: wrong number of arguments (5 for 4) for `join'"
+
+
+
+105) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/error/too_many_decimal_digits [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+106) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/static [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: unclosed parenthesis in media query expression
+        on line 4:9 of /sass/spec/css/media/range/static/input.scss
+>> @media (height < 600px) {a {b: c}}
+
+   --------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+107) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/semicolon/import [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+108) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/040_test_universal_unification_with_namespaced_element_target [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"-a ns|a.foo {
++"-a ns|a {
+   a: b;
+ }
+ "
+
+
+
+109) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/invalid_binary_operator/lte [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \")\"."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+110) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/fn-error/ruleset [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: error"
++"Error in compile_file(input, opts) : Error: error"
+
+
+
+111) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/errors/unicode/invalid/after [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid UTF-8 character \"\\xF6\""
++"Error in compile_file(input, opts) : Error: Invalid UTF-8 sequence"
+
+
+
+112) Failure:
+SassSpec::Test#test__sass-spec/spec/css/moz_document/functions/static [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+No error message produced.
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-"DEPRECATION WARNING on line 1, column 1 of /sass/spec/css/moz_document/functions/static/input.scss:
+-@-moz-document is deprecated and support will be removed from Sass in a future"
++""
+
+
+
+113) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/238_unify_root_pseudoelement [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,13 +1,13 @@
+-":root .foo-1, :root .bar-1 .baz-1 {
++":root .foo-1, :root .bar-1 .baz-1, .bar-1 :root .baz-1 {
+   test: 1;
+ }
+-.foo-2:root .bar-2, .baz-2.foo-2:root .bang-2 {
++.foo-2:root .bar-2, .foo-2:root .baz-2:root .bang-2, .baz-2:root .foo-2:root .bang-2 {
+   test: 2;
+ }
+-html:root .bar-3 {
++html:root .bar-3, html:root xml:root .bang-3, xml:root html:root .bang-3 {
+   test: 3;
+ }
+-.foo-4:root > .bar-4 .x-4, .baz-4.foo-4:root > .bar-4 .bang-4 .y-4 {
++.foo-4:root > .bar-4 .x-4, .foo-4:root > .bar-4 .baz-4:root .bang-4 .y-4, .baz-4:root .bang-4 .foo-4:root > .bar-4 .y-4 {
+   test: 4;
+ }
+ "
+
+
+
+114) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_713/not [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid function name \"not\"."
++"Error in compile_file(input, opts) : Error: Invalid function name \"not\"."
+
+
+
+115) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/23_escapes_literal_specials/01_inline [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,9 @@
+ ".result {
+-  output: \\0 _\\a _\\a ;
+-  output: \\0 _\\a _\\a ;
+-  output: \"[\\\\0 _\\\\a _\\\\a ]\";
+-  output: \"\\\\0 _\\\\a _\\\\a \";
+-  output: \"\\\\0 _\\\\a _\\\\a \";
+-  output: \"['\\\\0 _\\\\a _\\\\a ']\";
++  output: \\0_\\a_\\A;
++  output: \\0_\\a_\\A;
++  output: \"[\\\\0_\\\\a_\\\\A]\";
++  output: \"\\\\0_\\\\a_\\\\A\";
++  output: \"\\\\0_\\\\a_\\\\A\";
++  output: \"['\\\\0_\\\\a_\\\\A']\";
+ }
+ "
+
+
+
+116) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/errors/import/url/mixin/control-if/inside [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"foo {
+-  @import url(\"http://www.libsass.org\");
++"@import url(\"http://www.libsass.org\");
++foo {
+ }
+ "
+
+
+
+117) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/038_test_universal_unification_with_namespaceless_element_target [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"-a a.foo {
++"-a a.foo, -a ns|a {
+   a: b;
+ }
+ "
+
+
+
+118) Failure:
+SassSpec::Test#test__sass-spec/spec/values/colors/alpha_hex/initial_letter [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -4,10 +4,10 @@
+   four-digit-red: 170;
+   four-digit-green: 187;
+   four-digit-blue: 204;
+-  four-digit-alpha: 0.8666666667;
++  four-digit-alpha: 0.86667;
+   eight-digit-red: 171;
+   eight-digit-green: 205;
+   eight-digit-blue: 239;
+-  eight-digit-alpha: 0.0705882353;
++  eight-digit-alpha: 0.07059;
+ }
+ "
+
+
+
+119) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/20_escapes_literal_uppercase/03_inline_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ ".result {
+-  output: \\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ;
+-  output: [\\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ];
+-  output: \\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ;
+-  output: \\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ;
+-  output: ['\\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ'];
++  output: \\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z;
++  output: [\\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z];
++  output: \\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z;
++  output: \\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z;
++  output: ['\\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z'];
+ }
+ "
+
+
+
+120) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/11_escaped_literal/04_variable_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ ".result {
+-  output: l\\\\iteral;
+-  output: [l\\\\iteral];
+-  output: l\\\\iteral;
+-  output: l\\\\iteral;
+-  output: ['l\\\\iteral'];
++  output: l\\\\ite\\ral;
++  output: [l\\\\ite\\ral];
++  output: l\\\\ite\\ral;
++  output: l\\\\ite\\ral;
++  output: ['l\\\\ite\\ral'];
+ }
+ "
+
+
+
+121) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/029_test_universal_unification_with_namespaceless_universal_target [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"-a *.foo {
++"-a *.foo, -a ns|* {
+   a: b;
+ }
+ "
+
+
+
+122) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_221264 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid UTF-8 character \"\\xC0\""
++"Error in compile_file(input, opts) : Internal Error: Not enough space"
+
+
+
+123) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/malformed_expressions/at-debug/no-argument [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+124) Failure:
+SassSpec::Test#test__sass-spec/spec/core_functions/get-function/errors/illegal-kwarg [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Illegal keyword argument 'ccs' for `get-function'"
++"Error: Function get-function has no parameter named $ccs"
+
+
+
+125) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/invalid_binary_operator/gt [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \")\"."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+126) Failure:
+SassSpec::Test#test__sass-spec/spec/core_functions/join/error/named [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Unknown argument $invalid (true) for `join'"
++"Error: Function join has no parameter named $invalid"
+
+
+
+127) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/invalid_comparison/lte [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Expected expression."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+128) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass/unicode-bom/utf-16-big [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: only UTF-8 documents are currently supported; your document appears to be UTF-16 (big endian)
+        on line 1:1 of /sass/spec/libsass/unicode-bom/utf-16-big/input.scss
+>> ��
+   ^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+129) Failure:
+SassSpec::Test#test__sass-spec/spec/directives/if/escaped [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,6 @@
+-"a {
+-  b: c;
++"@\\69 f true {
++  a {
++    b: c;
++  }
+ }
+ "
+
+
+
+130) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_2365 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"\": expected selector, was \",\""
++"Error: Invalid CSS after \"    }\": expected selector, was \",\""
+
+
+
+131) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/180_test_basic_extend_loop [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-".foo, .bar {
++".bar, .foo {
+   a: b;
+ }
+ .bar, .foo {
+
+
+
+132) Failure:
+SassSpec::Test#test__sass-spec/spec/scss/interpolation-operators-precedence-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+133) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/error/nothing_after_minus [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+134) Failure:
+SassSpec::Test#test__sass-spec/spec/css/custom_properties/error/unmatched_brackets/square [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"  --prop: \": expected \"}\", was \"];\""
++"Error: Invalid CSS after \"  --prop:\": expected \"}\", was \"];\""
+
+
+
+135) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/23_escapes_literal_specials/03_inline_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ ".result {
+-  output: \\0 _\\a _\\a ;
+-  output: [\\0 _\\a _\\a ];
+-  output: \\0 _\\a _\\a ;
+-  output: \\0 _\\a _\\a ;
+-  output: ['\\0 _\\a _\\a '];
++  output: \\0_\\a_\\A;
++  output: [\\0_\\a_\\A];
++  output: \\0_\\a_\\A;
++  output: \\0_\\a_\\A;
++  output: ['\\0_\\a_\\A'];
+ }
+ "
+
+
+
+136) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/invalid-operation/plus [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+137) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1577 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Incompatible units: 'px' and '%'."
++"Error: Incompatible units: 'px' and '"
+
+
+
+138) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass/error-directive-nested/mixin [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: test"
++"Error in compile_file(input, opts) : Error: test"
+
+
+
+139) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1096 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+No error message produced.
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-"DEPRECATION WARNING on line 4, column 13 of /sass/spec/libsass-issues/issue_1096/input.scss:
+-Unescaped multiline strings are deprecated and will be removed in a future version of Sass."
++""
+
+
+
+140) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_690 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+141) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/17_escapes_literal_lowercase/03_inline_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,13 @@
+ ".result {
+-  output: \\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz;
+-  output: [\\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz];
+-  output: \\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz;
+-  output: \\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz;
+-  output: ['\\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz'];
++  output: \\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z;
++  output: [\\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z];
++  output: \\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z;
++  output: \\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z;
++  output: ['\\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z'];
+ }
+ "
+
+
+
+142) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/logic_ne/dimensions/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -3,85 +3,85 @@
+   test-2: false;
+   test-3: false;
+   test-4: false;
+-  test-5: true;
+-  test-6: true;
+-  test-7: true;
+-  test-8: true;
+-  test-9: true;
+-  test-10: true;
+-  test-11: true;
+-  test-12: true;
+-  test-13: true 0px;
+-  test-14: true 0px;
+-  test-15: true 0px;
+-  test-16: true 0px;
+-  test-17: false px;
+-  test-18: false px;
+-  test-19: false px;
+-  test-20: false px;
+-  test-21: false px;
+-  test-22: false px;
+-  test-23: false px;
+-  test-24: false px;
++  test-5: false;
++  test-6: false;
++  test-7: false;
++  test-8: false;
++  test-9: 10!=10px;
++  test-10: 10 !=10px;
++  test-11: 10!= 10px;
++  test-12: 10 != 10px;
++  test-13: true0px;
++  test-14: true0px;
++  test-15: true0px;
++  test-16: true0px;
++  test-17: falsepx;
++  test-18: falsepx;
++  test-19: falsepx;
++  test-20: falsepx;
++  test-21: falsepx;
++  test-22: falsepx;
++  test-23: falsepx;
++  test-24: falsepx;
+   test-25: false;
+   test-26: false;
+   test-27: false;
+   test-28: false;
+-  test-29: true;
+-  test-30: true;
+-  test-31: true;
+-  test-32: true;
+-  test-33: true 0px;
+-  test-34: true 0px;
+-  test-35: true 0px;
+-  test-36: true 0px;
+-  test-37: true px;
+-  test-38: true px;
+-  test-39: true px;
+-  test-40: true px;
+-  test-41: true px;
+-  test-42: true px;
+-  test-43: true px;
+-  test-44: true px;
+-  test-45: false;
+-  test-46: false;
+-  test-47: false;
+-  test-48: false;
+-  test-49: true 0px;
+-  test-50: true 0px;
+-  test-51: true 0px;
+-  test-52: true 0px;
+-  test-53: true px;
+-  test-54: true px;
+-  test-55: true px;
+-  test-56: true px;
+-  test-57: true px;
+-  test-58: true px;
+-  test-59: true px;
+-  test-60: true px;
+-  test-61: 1 true 0px;
+-  test-62: 1 true 0px;
+-  test-63: 1 true 0px;
+-  test-64: 1 true 0px;
+-  test-65: 1 true px;
+-  test-66: 1 true px;
+-  test-67: 1 true px;
+-  test-68: 1 true px;
+-  test-69: 1 true px;
+-  test-70: 1 true px;
+-  test-71: 1 true px;
+-  test-72: 1 true px;
+-  test-73: 10 true px;
+-  test-74: 10 true px;
+-  test-75: 10 true px;
+-  test-76: 10 true px;
+-  test-77: 10 true px;
+-  test-78: 10 true px;
+-  test-79: 10 true px;
+-  test-80: 10 true px;
+-  test-81: 10 true px;
+-  test-82: 10 true px;
+-  test-83: 10 true px;
+-  test-84: 10 true px;
++  test-29: 10px!=10px;
++  test-30: 10px !=10px;
++  test-31: 10px!= 10px;
++  test-32: 10px != 10px;
++  test-33: true0px;
++  test-34: true0px;
++  test-35: true0px;
++  test-36: true0px;
++  test-37: falsepx;
++  test-38: falsepx;
++  test-39: falsepx;
++  test-40: falsepx;
++  test-41: falsepx;
++  test-42: falsepx;
++  test-43: falsepx;
++  test-44: falsepx;
++  test-45: 10px!=10px;
++  test-46: 10px !=10px;
++  test-47: 10px!= 10px;
++  test-48: 10px != 10px;
++  test-49: 10true0px;
++  test-50: 10true0px;
++  test-51: 10true0px;
++  test-52: 10true0px;
++  test-53: 10truepx;
++  test-54: 10truepx;
++  test-55: 10truepx;
++  test-56: 10truepx;
++  test-57: 10truepx;
++  test-58: 10truepx;
++  test-59: 10truepx;
++  test-60: 10truepx;
++  test-61: 10true0px;
++  test-62: 10true0px;
++  test-63: 10true0px;
++  test-64: 10true0px;
++  test-65: 10truepx;
++  test-66: 10truepx;
++  test-67: 10truepx;
++  test-68: 10truepx;
++  test-69: 10truepx;
++  test-70: 10truepx;
++  test-71: 10truepx;
++  test-72: 10truepx;
++  test-73: 10px!=10px;
++  test-74: 10px !=10px;
++  test-75: 10px!= 10px;
++  test-76: 10px != 10px;
++  test-77: 10px!=10px;
++  test-78: 10px !=10px;
++  test-79: 10px!= 10px;
++  test-80: 10px != 10px;
++  test-81: 10ptruepx;
++  test-82: 10ptruepx;
++  test-83: 10ptruepx;
++  test-84: 10ptruepx;
+ }
+ "
+
+
+
+143) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unknown_directive [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Invalid CSS after "@asdf .~@": expected 1 selector or at-rule, was "#$^&*()_-+=[]|:<>,"
+        on line 5:7 of /sass/spec/css/unknown_directive/input.scss
+>> @asdf .~@#$^&*()_-+=[]|:<>,.?/;
+
+   ------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+144) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_221286 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid UTF-8 character \"\\xD2\""
++"Error in compile_file(input, opts) : Error: Code too deeply neested"
+
+
+
+145) Failure:
+SassSpec::Test#test__sass-spec/spec/css/moz_document/empty_prefix [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -8,7 +8,7 @@
+     b: c;
+   }
+ }
+-@-moz-document url-prefix(\"\") {
++@-moz-document url-prefix('') {
+   a {
+     b: c;
+   }
+
+
+
+146) Failure:
+SassSpec::Test#test__sass-spec/spec/css/custom_properties/error/unmatched_brackets/paren [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"  --prop: \": expected \"}\", was \");\""
++"Error: Invalid CSS after \"  --prop:\": expected \"}\", was \");\""
+
+
+
+147) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2295/error/wrapped [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Properties are only allowed within rules, directives, mixin includes, or other properties."
++"Error: Invalid CSS after \"@if (true) {\": expected 1 selector or at-rule, was \"display: none;\""
+
+
+
+148) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/subtract/dimensions/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -7,81 +7,81 @@
+   test-6: 10 -10px;
+   test-7: 0px;
+   test-8: 0px;
+-  test-9: 10 -10px;
++  test-9: 10-10px;
+   test-10: 10 -10px;
+-  test-11: 10-10px;
+-  test-12: 10-10px;
+-  test-13: 9 0px;
+-  test-14: 10 -1 0px;
+-  test-15: 9 0px;
+-  test-16: 9 0px;
+-  test-17: 0 px;
+-  test-18: 10 -10 px;
+-  test-19: 0 px;
+-  test-20: 0 px;
+-  test-21: 0 px;
+-  test-22: 10 -10 px;
+-  test-23: 0 px;
+-  test-24: 0 px;
++  test-11: 10- 10px;
++  test-12: 10 - 10px;
++  test-13: 90px;
++  test-14: 10 -10px;
++  test-15: 90px;
++  test-16: 90px;
++  test-17: 0px;
++  test-18: 10 -10px;
++  test-19: 0px;
++  test-20: 0px;
++  test-21: 0px;
++  test-22: 10 -10px;
++  test-23: 0px;
++  test-24: 0px;
+   test-25: 0px;
+   test-26: 10px -10px;
+   test-27: 10px- 10px;
+   test-28: 0px;
+-  test-29: 10px- 10px;
++  test-29: 10px-10px;
+   test-30: 10px -10px;
+   test-31: 10px- 10px;
+-  test-32: 10px-10px;
+-  test-33: 9px 0px;
+-  test-34: 10px -1 0px;
+-  test-35: 10px- 1 0px;
+-  test-36: 9px 0px;
+-  test-37: 0px px;
+-  test-38: 10px -10 px;
+-  test-39: 10px- 10 px;
+-  test-40: 0px px;
+-  test-41: 0px px;
+-  test-42: 10px -10 px;
+-  test-43: 10px- 10 px;
+-  test-44: 0px px;
++  test-32: 10px - 10px;
++  test-33: 9px0px;
++  test-34: 10px -10px;
++  test-35: 10px- 10px;
++  test-36: 9px0px;
++  test-37: 0pxpx;
++  test-38: 10px -10px;
++  test-39: 10px- 10px;
++  test-40: 0pxpx;
++  test-41: 0pxpx;
++  test-42: 10px -10px;
++  test-43: 10px- 10px;
++  test-44: 0pxpx;
+   test-45: 10px-10px;
+   test-46: 10px -10px;
+   test-47: 10px- 10px;
+-  test-48: 10px-10px;
++  test-48: 10px - 10px;
+   test-49: 10px-10px;
+-  test-50: 10px -1 0px;
+-  test-51: 10px- 1 0px;
+-  test-52: 10px-1 0px;
++  test-50: 10px -10px;
++  test-51: 10px- 10px;
++  test-52: 10px-10px;
+   test-53: 10px-10px;
+-  test-54: 10px -10 px;
+-  test-55: 10px- 10 px;
+-  test-56: 10px-10 px;
++  test-54: 10px -10px;
++  test-55: 10px- 10px;
++  test-56: 10px-10px;
+   test-57: 10px-10px;
+-  test-58: 10px -10 px;
+-  test-59: 10px- 10 px;
+-  test-60: 10px-10 px;
+-  test-61: 1 0px-10px;
+-  test-62: 1 0px -1 0px;
+-  test-63: 1 0px- 1 0px;
+-  test-64: 1 0px-1 0px;
+-  test-65: 1 0px-10px;
+-  test-66: 1 0px -10 px;
+-  test-67: 1 0px- 10 px;
+-  test-68: 1 0px-10 px;
+-  test-69: 1 0px-10px;
+-  test-70: 1 0px -10 px;
+-  test-71: 1 0px- 10 px;
+-  test-72: 1 0px-10 px;
+-  test-73: 10 px-10px;
+-  test-74: 10 px -10 px;
+-  test-75: 10 px- 10 px;
+-  test-76: 10 px-10 px;
+-  test-77: 10 px-10px;
+-  test-78: 10 px -10 px;
+-  test-79: 10 px- 10 px;
+-  test-80: 10 px-10 px;
+-  test-81: 10 px-10px;
+-  test-82: 10 px -10 px;
+-  test-83: 10 px- 10 px;
+-  test-84: 10 px-10 px;
++  test-58: 10px -10px;
++  test-59: 10px- 10px;
++  test-60: 10px-10px;
++  test-61: 10px-10px;
++  test-62: 10px -10px;
++  test-63: 10px- 10px;
++  test-64: 10px-10px;
++  test-65: 10px-10px;
++  test-66: 10px -10px;
++  test-67: 10px- 10px;
++  test-68: 10px-10px;
++  test-69: 10px-10px;
++  test-70: 10px -10px;
++  test-71: 10px- 10px;
++  test-72: 10px-10px;
++  test-73: 10px-10px;
++  test-74: 10px -10px;
++  test-75: 10px- 10px;
++  test-76: 10px - 10px;
++  test-77: 10px-10px;
++  test-78: 10px -10px;
++  test-79: 10px- 10px;
++  test-80: 10px - 10px;
++  test-81: 10px-10px;
++  test-82: 10px -10px;
++  test-83: 10px- 10px;
++  test-84: 10px-10px;
+ }
+ "
+
+
+
+149) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass/selector-functions/selector-append-error-1 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+150) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/arglists/can-end-with-comma/error-function-3 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"...n-error($a,$b, \": expected variable (e.g. $foo), was \"{\""
++"Error: Invalid CSS after \"...en-error($a,$b,\": expected variable (e.g. $foo), was \"{\""
+
+
+
+151) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2235/empty [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-"@media all and (min-width: 100px) {
+-  @import \"https://example.org\";
+-}
+-"
++""
+
+
+
+152) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/181_test_three_level_extend_loop [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,7 +1,7 @@
+-".foo, .baz, .bar {
++".baz, .bar, .foo {
+   a: b;
+ }
+-.bar, .foo, .baz {
++.bar, .foo {
+   c: d;
+ }
+ .baz, .bar, .foo {
+
+
+
+153) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2016 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"...pecific grammar\": expected \")\", was \". And this thin...\""
++"Error: Invalid CSS after \"...pecific grammar\": expected expression (e.g. 1px, bold), was \". And this thing he\""
+
+
+
+154) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/invalid_binary_operator/gte [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \")\"."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+155) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/addition/dimensions/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -7,81 +7,81 @@
+   test-6: 10 +10px;
+   test-7: 20px;
+   test-8: 20px;
+-  test-9: 1010px;
+-  test-10: 1010px;
+-  test-11: 1010px;
+-  test-12: 1010px;
+-  test-13: 11 0px;
+-  test-14: 11 0px;
+-  test-15: 11 0px;
+-  test-16: 11 0px;
+-  test-17: 20 px;
+-  test-18: 20 px;
+-  test-19: 20 px;
+-  test-20: 20 px;
+-  test-21: 20 px;
+-  test-22: 20 px;
+-  test-23: 20 px;
+-  test-24: 20 px;
++  test-9: 10+10px;
++  test-10: 10 +10px;
++  test-11: 10+ 10px;
++  test-12: 10 + 10px;
++  test-13: 110px;
++  test-14: 110px;
++  test-15: 110px;
++  test-16: 110px;
++  test-17: 20px;
++  test-18: 20px;
++  test-19: 20px;
++  test-20: 20px;
++  test-21: 20px;
++  test-22: 20px;
++  test-23: 20px;
++  test-24: 20px;
+   test-25: 20px;
+   test-26: 10px +10px;
+   test-27: 20px;
+   test-28: 20px;
+-  test-29: 10px10px;
+-  test-30: 10px10px;
+-  test-31: 10px10px;
+-  test-32: 10px10px;
+-  test-33: 11px 0px;
+-  test-34: 11px 0px;
+-  test-35: 11px 0px;
+-  test-36: 11px 0px;
+-  test-37: 20px px;
+-  test-38: 20px px;
+-  test-39: 20px px;
+-  test-40: 20px px;
+-  test-41: 20px px;
+-  test-42: 20px px;
+-  test-43: 20px px;
+-  test-44: 20px px;
+-  test-45: 10px10px;
+-  test-46: 10px10px;
+-  test-47: 10px10px;
+-  test-48: 10px10px;
+-  test-49: 10px1 0px;
+-  test-50: 10px1 0px;
+-  test-51: 10px1 0px;
+-  test-52: 10px1 0px;
+-  test-53: 10px10 px;
+-  test-54: 10px10 px;
+-  test-55: 10px10 px;
+-  test-56: 10px10 px;
+-  test-57: 10px10 px;
+-  test-58: 10px10 px;
+-  test-59: 10px10 px;
+-  test-60: 10px10 px;
+-  test-61: 1 0px1 0px;
+-  test-62: 1 0px1 0px;
+-  test-63: 1 0px1 0px;
+-  test-64: 1 0px1 0px;
+-  test-65: 1 0px10 px;
+-  test-66: 1 0px10 px;
+-  test-67: 1 0px10 px;
+-  test-68: 1 0px10 px;
+-  test-69: 1 0px10 px;
+-  test-70: 1 0px10 px;
+-  test-71: 1 0px10 px;
+-  test-72: 1 0px10 px;
+-  test-73: 10 px10 px;
+-  test-74: 10 px10 px;
+-  test-75: 10 px10 px;
+-  test-76: 10 px10 px;
+-  test-77: 10 px10 px;
+-  test-78: 10 px10 px;
+-  test-79: 10 px10 px;
+-  test-80: 10 px10 px;
+-  test-81: 10 px10 px;
+-  test-82: 10 px10 px;
+-  test-83: 10 px10 px;
+-  test-84: 10 px10 px;
++  test-29: 10px+10px;
++  test-30: 10px +10px;
++  test-31: 10px+ 10px;
++  test-32: 10px + 10px;
++  test-33: 11px0px;
++  test-34: 11px0px;
++  test-35: 11px0px;
++  test-36: 11px0px;
++  test-37: 20pxpx;
++  test-38: 20pxpx;
++  test-39: 20pxpx;
++  test-40: 20pxpx;
++  test-41: 20pxpx;
++  test-42: 20pxpx;
++  test-43: 20pxpx;
++  test-44: 20pxpx;
++  test-45: 10px+10px;
++  test-46: 10px +10px;
++  test-47: 10px+ 10px;
++  test-48: 10px + 10px;
++  test-49: 10px10px;
++  test-50: 10px10px;
++  test-51: 10px10px;
++  test-52: 10px10px;
++  test-53: 10px10px;
++  test-54: 10px10px;
++  test-55: 10px10px;
++  test-56: 10px10px;
++  test-57: 10px10px;
++  test-58: 10px10px;
++  test-59: 10px10px;
++  test-60: 10px10px;
++  test-61: 10px10px;
++  test-62: 10px10px;
++  test-63: 10px10px;
++  test-64: 10px10px;
++  test-65: 10px10px;
++  test-66: 10px10px;
++  test-67: 10px10px;
++  test-68: 10px10px;
++  test-69: 10px10px;
++  test-70: 10px10px;
++  test-71: 10px10px;
++  test-72: 10px10px;
++  test-73: 10px+10px;
++  test-74: 10px +10px;
++  test-75: 10px+ 10px;
++  test-76: 10px + 10px;
++  test-77: 10px+10px;
++  test-78: 10px +10px;
++  test-79: 10px+ 10px;
++  test-80: 10px + 10px;
++  test-81: 10px10px;
++  test-82: 10px10px;
++  test-83: 10px10px;
++  test-84: 10px10px;
+ }
+ "
+
+
+
+156) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass/unicode-bom/utf-16-little [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: only UTF-8 documents are currently supported; your document appears to be UTF-16 (little endian)
+        on line 1:1 of /sass/spec/libsass/unicode-bom/utf-16-little/input.scss
+>> ��f
+   ^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+157) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_963/selector-functions/is_superselector/nth_match_is_superselector_of_subset_nth_match [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,5 +1,5 @@
+ "test {
+-  a: true;
+-  b: true;
++  a: false;
++  b: false;
+ }
+ "
+
+
+
+158) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/053_test_element_unification_with_namespaced_universal_target [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"-a ns|*.foo {
++"-a ns|*.foo, -a ns|a {
+   a: b;
+ }
+ "
+
+
+
+159) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/23_escapes_literal_specials/04_variable_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ ".result {
+-  output: \\0 _\\a _\\a ;
+-  output: [\\0 _\\a _\\a ];
+-  output: \\0 _\\a _\\a ;
+-  output: \\0 _\\a _\\a ;
+-  output: ['\\0 _\\a _\\a '];
++  output: \\0_\\a_\\A;
++  output: [\\0_\\a_\\A];
++  output: \\0_\\a_\\A;
++  output: \\0_\\a_\\A;
++  output: ['\\0_\\a_\\A'];
+ }
+ "
+
+
+
+160) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_870-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -3,7 +3,7 @@
+   output: alpha, beta, gamma, delta;
+   output: \"[alpha, beta, gamma, delta]\";
+   output: \"alpha, beta, gamma, delta\";
+-  output: \"[\" alpha, beta, gamma, delta \"]\";
++  output: \"[\"alpha, beta, gamma, delta\"]\";
+   output: \"alpha, beta, gamma, delta\";
+   output: \"['alpha, beta, gamma, delta']\";
+ }
+@@ -12,7 +12,7 @@
+   output: alpha beta gamma delta;
+   output: \"[alpha beta gamma delta]\";
+   output: \"alpha beta gamma delta\";
+-  output: \"[\" alpha beta gamma delta \"]\";
++  output: \"[\"alpha beta gamma delta\"]\";
+   output: \"alpha beta gamma delta\";
+   output: \"['alpha beta gamma delta']\";
+ }
+
+
+
+161) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/with_expressions [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: unclosed parenthesis in media query expression
+        on line 5:9 of /sass/spec/css/media/range/with_expressions/input.scss
+>> @media ($width < 600px) {a {dynamic: left}}
+
+   --------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+162) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/semicolon/content [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+163) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_221267 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid UTF-8 character \"\\xAD\""
++"Error in compile_file(input, opts) : Internal Error: Not enough space"
+
+
+
+164) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/malformed_expressions/at-warn/incomplete-expression [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"@warn(\"foo\"\": expected \")\", was \";\""
++"Error in compile_file(input, opts) : Error: unclosed parenthesis"
+
+
+
+165) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/logic_ne/numbers/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -3,41 +3,41 @@
+   test-2: false;
+   test-3: false;
+   test-4: false;
+-  test-5: true;
+-  test-6: true;
+-  test-7: true;
+-  test-8: true;
+-  test-9: true 0;
+-  test-10: true 0;
+-  test-11: true 0;
+-  test-12: true 0;
+-  test-13: true;
+-  test-14: true;
+-  test-15: true;
+-  test-16: true;
+-  test-17: false;
+-  test-18: false;
+-  test-19: false;
+-  test-20: false;
+-  test-21: true 0;
+-  test-22: true 0;
+-  test-23: true 0;
+-  test-24: true 0;
+-  test-25: false;
+-  test-26: false;
+-  test-27: false;
+-  test-28: false;
+-  test-29: 1 true 0;
+-  test-30: 1 true 0;
+-  test-31: 1 true 0;
+-  test-32: 1 true 0;
+-  test-33: 1 true;
+-  test-34: 1 true;
+-  test-35: 1 true;
+-  test-36: 1 true;
+-  test-37: false;
+-  test-38: false;
+-  test-39: false;
+-  test-40: false;
++  test-5: 10!=10;
++  test-6: 10 !=10;
++  test-7: 10!= 10;
++  test-8: 10 != 10;
++  test-9: true0;
++  test-10: true0;
++  test-11: true0;
++  test-12: true0;
++  test-13: 10!=10;
++  test-14: 10 !=10;
++  test-15: 10!= 10;
++  test-16: 10 != 10;
++  test-17: 10!=10;
++  test-18: 10 !=10;
++  test-19: 10!= 10;
++  test-20: 10 != 10;
++  test-21: 10!=10;
++  test-22: 10 !=10;
++  test-23: 10!= 10;
++  test-24: 10 != 10;
++  test-25: 10!=10;
++  test-26: 10 !=10;
++  test-27: 10!= 10;
++  test-28: 10 != 10;
++  test-29: 10!=10;
++  test-30: 10 !=10;
++  test-31: 10!= 10;
++  test-32: 10 != 10;
++  test-33: 10!=10;
++  test-34: 10 !=10;
++  test-35: 10!= 10;
++  test-36: 10 != 10;
++  test-37: 10!=10;
++  test-38: 10 !=10;
++  test-39: 10!= 10;
++  test-40: 10 != 10;
+ }
+ "
+
+
+
+166) Failure:
+SassSpec::Test#test__sass-spec/spec/selectors/placeholder_in_pseudo [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,13 +1,16 @@
+-"a:matches(c) {
++"a:matches() {
+   x: y;
+ }
+-a {
++a:matches(c) {
++  x: y;
++}
++a:not() {
+   x: y;
+ }
+ a:not(c) {
+   x: y;
+ }
+-* {
++:not() {
+   x: y;
+ }
+ "
+
+
+
+167) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/division/color_color [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+168) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/17_escapes_literal_lowercase/01_inline [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,15 @@
+ ".result {
+-  output: \\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz;
+-  output: \\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz;
+-  output: \"[\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz]\";
+-  output: \"\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz\";
+-  output: \"\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz\";
+-  output: \"['\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz']\";
++  output: \\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z;
++  output: \\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z;
++  output: \"[\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z]\";
++  output: \"\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z\";
++  output: \"\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z\";
++  output: \"['\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z']\";
+ }
+ "
+
+
+
+169) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1801/simple-import-loop [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: An @import loop has been found: /sass/spec/libsass-issues/issue_1801/simple-import-loop/_susy.scss imports itself"
++"Error: An @import loop has been found:"
+
+
+
+170) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/logic_eq/numbers/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -3,41 +3,41 @@
+   test-2: true;
+   test-3: true;
+   test-4: true;
+-  test-5: false;
+-  test-6: false;
+-  test-7: false;
+-  test-8: false;
+-  test-9: false 0;
+-  test-10: false 0;
+-  test-11: false 0;
+-  test-12: false 0;
+-  test-13: false;
+-  test-14: false;
+-  test-15: false;
+-  test-16: false;
+-  test-17: true;
+-  test-18: true;
+-  test-19: true;
+-  test-20: true;
+-  test-21: false 0;
+-  test-22: false 0;
+-  test-23: false 0;
+-  test-24: false 0;
+-  test-25: true;
+-  test-26: true;
+-  test-27: true;
+-  test-28: true;
+-  test-29: 1 false 0;
+-  test-30: 1 false 0;
+-  test-31: 1 false 0;
+-  test-32: 1 false 0;
+-  test-33: 1 false;
+-  test-34: 1 false;
+-  test-35: 1 false;
+-  test-36: 1 false;
+-  test-37: true;
+-  test-38: true;
+-  test-39: true;
+-  test-40: true;
++  test-5: 10==10;
++  test-6: 10 ==10;
++  test-7: 10== 10;
++  test-8: 10 == 10;
++  test-9: false0;
++  test-10: false0;
++  test-11: false0;
++  test-12: false0;
++  test-13: 10==10;
++  test-14: 10 ==10;
++  test-15: 10== 10;
++  test-16: 10 == 10;
++  test-17: 10==10;
++  test-18: 10 ==10;
++  test-19: 10== 10;
++  test-20: 10 == 10;
++  test-21: 10==10;
++  test-22: 10 ==10;
++  test-23: 10== 10;
++  test-24: 10 == 10;
++  test-25: 10==10;
++  test-26: 10 ==10;
++  test-27: 10== 10;
++  test-28: 10 == 10;
++  test-29: 10==10;
++  test-30: 10 ==10;
++  test-31: 10== 10;
++  test-32: 10 == 10;
++  test-33: 10==10;
++  test-34: 10 ==10;
++  test-35: 10== 10;
++  test-36: 10 == 10;
++  test-37: 10==10;
++  test-38: 10 ==10;
++  test-39: 10== 10;
++  test-40: 10 == 10;
+ }
+ "
+
+
+
+171) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2295/error/basic [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"display: none\": expected \"{\", was \";\""
++"Error: Invalid CSS after \"d\": expected 1 selector or at-rule, was \"display: none;\""
+
+
+
+172) Failure:
+SassSpec::Test#test__sass-spec/spec/css/custom_properties/error/no_nesting [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+173) Failure:
+SassSpec::Test#test__sass-spec/spec/values/colors/alpha_hex/initial_digit [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -8,6 +8,6 @@
+   eight-digit-red: 152;
+   eight-digit-green: 118;
+   eight-digit-blue: 84;
+-  eight-digit-alpha: 0.1960784314;
++  eight-digit-alpha: 0.19608;
+ }
+ "
+
+
+
+174) Failure:
+SassSpec::Test#test__sass-spec/spec/css/selector/reference_combinator [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+175) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/division/mixed/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -16,9 +16,9 @@
+   test-15: 10/ #AAA;
+   test-16: 10 / #AAA;
+   test-17: 10/itpl;
+-  test-18: 10/itpl;
+-  test-19: 10/itpl;
+-  test-20: 10/itpl;
++  test-18: 10 /itpl;
++  test-19: 10/ itpl;
++  test-20: 10 / itpl;
+   test-21: 10%/10%;
+   test-22: 10% /10%;
+   test-23: 10%/ 10%;
+@@ -32,9 +32,9 @@
+   test-31: 10%/ #AAA;
+   test-32: 10% / #AAA;
+   test-33: 10%/itpl;
+-  test-34: 10%/itpl;
+-  test-35: 10%/itpl;
+-  test-36: 10%/itpl;
++  test-34: 10% /itpl;
++  test-35: 10%/ itpl;
++  test-36: 10% / itpl;
+   test-37: 10px/10px;
+   test-38: 10px /10px;
+   test-39: 10px/ 10px;
+@@ -44,16 +44,16 @@
+   test-43: 10px/ #AAA;
+   test-44: 10px / #AAA;
+   test-45: 10px/itpl;
+-  test-46: 10px/itpl;
+-  test-47: 10px/itpl;
+-  test-48: 10px/itpl;
++  test-46: 10px /itpl;
++  test-47: 10px/ itpl;
++  test-48: 10px / itpl;
+   test-49: #AAA/itpl;
+-  test-50: #AAA/itpl;
+-  test-51: #AAA/itpl;
+-  test-52: #AAA/itpl;
++  test-50: #AAA /itpl;
++  test-51: #AAA/ itpl;
++  test-52: #AAA / itpl;
+   test-53: itpl/itpl;
+-  test-54: itpl/itpl;
+-  test-55: itpl/itpl;
+-  test-56: itpl/itpl;
++  test-54: itpl /itpl;
++  test-55: itpl/ itpl;
++  test-56: itpl / itpl;
+ }
+ "
+
+
+
+176) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1890 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -3,7 +3,7 @@
+     display: block;
+   }
+ }
+-.wrap .box {
++.box {
+   display: inline-block;
+ }
+ "
+
+
+
+177) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/237_extend_with_universal_selector_different_namespace [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"-a ns|*.foo {
++"-a ns|*.foo, -a ns|a {
+   a: b;
+ }
+ "
+
+
+
+178) Failure:
+SassSpec::Test#test__sass-spec/spec/css/custom_properties/indentation [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -15,14 +15,14 @@
+   --all-indented: {
+     foo: bar; };
+   --below-base:
+-     foo
+-  bar
+-    baz;
++    foo
++ bar
++   baz;
+   --deep-base: {
+-    foo: bar;
+-  };
++           foo: bar;
++         };
+   --hard-tabs: {
+-  \tfoo: bar;
+-  };
++\t\tfoo: bar;
++\t};
+ }
+ "
+
+
+
+179) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass/precision/lower [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,6 +1,6 @@
+ "test {
+   foo: 0.4999 0;
+-  bar: 0.5 0;
++  bar: 0.49999 0;
+   baz: 0.5 1;
+ }
+ "
+
+
+
+180) Failure:
+SassSpec::Test#test__sass-spec/spec/css/custom_properties/without_semicolon [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,11 @@
+ ".simple-value {
+-  --without-semicolon: value ;
++  --without-semicolon: value
++;
+ }
+ .bracketed-value {
+   --without-semicolon: {
+     a: b
+-  } ;
++  }
++;
+ }
+ "
+
+
+
+181) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/malformed_expressions/at-error/no-argument [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"@error\": expected expression (e.g. 1px, bold), was \";\""
++"Error in compile_file(input, opts) : Error: ()"
+
+
+
+182) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1419/unquoted [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+ "foo {
+-  foo: ABCD;
++  foo: AB\\63 D;
+ }
+ "
+
+
+
+183) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_2359 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Undefined variable: "$variable".
+        on line 6:3 of /sass/spec/libsass-issues/issue_2359/input.scss
+>> */
+   --^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+184) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/invalid_binary_operator/eq [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \")\"."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+185) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/17_escapes_literal_lowercase/02_variable [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,15 @@
+ ".result {
+-  output: \\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz;
+-  output: \\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz;
+-  output: \"[\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz]\";
+-  output: \"\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz\";
+-  output: \"\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz\";
+-  output: \"['\\\\b \\\\c \\\\d \\\\e \\\\f ghijklmnopqrstuvwxyz']\";
++  output: \\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z;
++  output: \\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z;
++  output: \"[\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z]\";
++  output: \"\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z\";
++  output: \"\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z\";
++  output: \"['\\\\b\\\\c\\\\d\\\\e\\\\f\\\\g\\\\h\\\\i\\\\j\\\\k\\\\l\\\\m\\\
++\\\\o\\\\p\\\\q\\\\r\\\\s\\\\t\\\\u\\\\v\\\\w\\\\x\\\\y\\\\z']\";
+ }
+ "
+
+
+
+186) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/loop-for/numeric/upper_eval [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: \"foo\" is not an integer."
++"Error in compile_file(input, opts) : Error: \"foo\" is not an integer."
+
+
+
+187) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/semicolon/error [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"value\": expected expression (e.g. 1px, bold), was \";\""
++"Error in compile_file(input, opts) : Error: value"
+
+
+
+188) Failure:
+SassSpec::Test#test__sass-spec/spec/css/custom_properties/error/empty [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+189) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/from_interpolation [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: unclosed parenthesis in media query expression
+        on line 7:9 of /sass/spec/css/media/range/from_interpolation/input.scss
+>> @media (#{"100px < width"} < 500px) {a {interpolation: left}}
+
+   --------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+190) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/20_escapes_literal_uppercase/04_variable_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ ".result {
+-  output: \\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ;
+-  output: [\\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ];
+-  output: \\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ;
+-  output: \\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ;
+-  output: ['\\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ'];
++  output: \\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z;
++  output: [\\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z];
++  output: \\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z;
++  output: \\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z;
++  output: ['\\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z'];
+ }
+ "
+
+
+
+191) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/malformed_expressions/at-debug/incomplete-expression [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"@debug(\"foo\"\": expected \")\", was \";\""
++"Error in compile_file(input, opts) : Error: unclosed parenthesis"
+
+
+
+192) Failure:
+SassSpec::Test#test__sass-spec/spec/mixin/error/no_content [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Mixin doesn't accept a content block."
++"Error: Mixin \"no-content\" does not accept a content block."
+
+
+
+193) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/fn-error/simple [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: error"
++"Error in compile_file(input, opts) : Error: error"
+
+
+
+194) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/error/ident_minus_space_ident [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+195) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2232 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,2 +1,10 @@
+-".b-black{background:black}.box-bred{x:red}.box-byellow{x:#ff0}
++".b-black {
++  background: black;
++}
++.box-bred {
++  x: foo;
++}
++.box-byellow {
++  x: foo;
++}
+ "
+
+
+
+196) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_948-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+ "foo {
+-  bar: 50 px;
++  bar: 50px;
+ }
+ "
+
+
+
+197) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2053 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -4,7 +4,7 @@
+ .bar[disabled] foo {
+   background: blue;
+ }
+-foo [disabled].baz {
++foo .baz[disabled] {
+   background: blue;
+ }
+ "
+
+
+
+198) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/extend-result-of-extend [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: ".a" failed to @extend ":not(.b)".
+       The selector ":not(.b)" was not found.
+       Use "@extend :not(.b) !optional" if the extend should be able to fail.
+        on line 2:13 of /sass/spec/extend-tests/extend-result-of-extend/input.scss
+>> .a {@extend :not(.b)}
+
+   ------------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+199) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/fn-varargs/with-default [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"... test($param...\": expected \")\", was \":\"default\") {}\""
++"Error: Invalid CSS after \"... test($param...\": expected \")\", was ':\"default\") {}'"
+
+
+
+200) Failure:
+SassSpec::Test#test__sass-spec/spec/extend-tests/236_extend_with_universal_selector_empty_namespace [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+-"-a |*.foo {
++"-a |*.foo, -a |a {
+   a: b;
+ }
+ "
+
+
+
+201) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/color-functions/opacity/opacity [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,104 +1,104 @@
+ "foo {
+   c0: 0;
+   c1: 1;
+-  c2: 1;
+-  c3: 1;
+-  c4: 1;
+-  c5: 1;
+-  c6: 1;
+-  c7: 1;
+-  c8: 1;
+-  c9: 1;
+-  c10: 1;
+-  c11: 1;
+-  c12: 1;
+-  c13: 1;
+-  c14: 1;
+-  c15: 1;
+-  c16: 1;
+-  c17: 1;
+-  c18: 1;
+-  c19: 1;
+-  c20: 1;
+-  c21: 1;
+-  c22: 1;
+-  c23: 1;
+-  c24: 1;
+-  c25: 1;
+-  c26: 1;
+-  c27: 1;
+-  c28: 1;
+-  c29: 1;
+-  c30: 1;
+-  c31: 1;
+-  c32: 1;
+-  c33: 1;
+-  c34: 1;
+-  c35: 1;
+-  c36: 1;
+-  c37: 1;
+-  c38: 1;
+-  c39: 1;
+-  c40: 1;
+-  c41: 1;
+-  c42: 1;
+-  c43: 1;
+-  c44: 1;
+-  c45: 1;
+-  c46: 1;
+-  c47: 1;
+-  c48: 1;
+-  c49: 1;
+-  c50: 1;
+-  c51: 1;
+-  c52: 1;
+-  c53: 1;
+-  c54: 1;
+-  c55: 1;
+-  c56: 1;
+-  c57: 1;
+-  c58: 1;
+-  c59: 1;
+-  c60: 1;
+-  c61: 1;
+-  c62: 1;
+-  c63: 1;
+-  c64: 1;
+-  c65: 1;
+-  c66: 1;
+-  c67: 1;
+-  c68: 1;
+-  c69: 1;
+-  c70: 1;
+-  c71: 1;
+-  c72: 1;
+-  c73: 1;
+-  c74: 1;
+-  c75: 1;
+-  c76: 1;
+-  c77: 1;
+-  c78: 1;
+-  c79: 1;
+-  c80: 1;
+-  c81: 1;
+-  c82: 1;
+-  c83: 1;
+-  c84: 1;
+-  c85: 1;
+-  c86: 1;
+-  c87: 1;
+-  c88: 1;
+-  c89: 1;
+-  c90: 1;
+-  c91: 1;
+-  c92: 1;
+-  c93: 1;
+-  c94: 1;
+-  c95: 1;
+-  c96: 1;
+-  c97: 1;
+-  c98: 1;
+-  c99: 1;
+-  c100: 1;
++  c2: 2;
++  c3: 3;
++  c4: 4;
++  c5: 5;
++  c6: 6;
++  c7: 7;
++  c8: 8;
++  c9: 9;
++  c10: 10;
++  c11: 11;
++  c12: 12;
++  c13: 13;
++  c14: 14;
++  c15: 15;
++  c16: 16;
++  c17: 17;
++  c18: 18;
++  c19: 19;
++  c20: 20;
++  c21: 21;
++  c22: 22;
++  c23: 23;
++  c24: 24;
++  c25: 25;
++  c26: 26;
++  c27: 27;
++  c28: 28;
++  c29: 29;
++  c30: 30;
++  c31: 31;
++  c32: 32;
++  c33: 33;
++  c34: 34;
++  c35: 35;
++  c36: 36;
++  c37: 37;
++  c38: 38;
++  c39: 39;
++  c40: 40;
++  c41: 41;
++  c42: 42;
++  c43: 43;
++  c44: 44;
++  c45: 45;
++  c46: 46;
++  c47: 47;
++  c48: 48;
++  c49: 49;
++  c50: 50;
++  c51: 51;
++  c52: 52;
++  c53: 53;
++  c54: 54;
++  c55: 55;
++  c56: 56;
++  c57: 57;
++  c58: 58;
++  c59: 59;
++  c60: 60;
++  c61: 61;
++  c62: 62;
++  c63: 63;
++  c64: 64;
++  c65: 65;
++  c66: 66;
++  c67: 67;
++  c68: 68;
++  c69: 69;
++  c70: 70;
++  c71: 71;
++  c72: 72;
++  c73: 73;
++  c74: 74;
++  c75: 75;
++  c76: 76;
++  c77: 77;
++  c78: 78;
++  c79: 79;
++  c80: 80;
++  c81: 81;
++  c82: 82;
++  c83: 83;
++  c84: 84;
++  c85: 85;
++  c86: 86;
++  c87: 87;
++  c88: 88;
++  c89: 89;
++  c90: 90;
++  c91: 91;
++  c92: 92;
++  c93: 93;
++  c94: 94;
++  c95: 95;
++  c96: 96;
++  c97: 97;
++  c98: 98;
++  c99: 99;
++  c100: 100;
+ }
+ "
+
+
+
+202) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/extend-tests/204_test_extend_with_subject_retains_subject_on_extender [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Invalid CSS after "...foo .bar {a: b}": expected 1 selector or at-rule, was ".bip! .bap {@extend"
+        on line 1:17 of /sass/spec/extend-tests/204_test_extend_with_subject_retains_subject_on_extender/input.scss
+>> .foo .bar {a: b}
+
+   ----------------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+203) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1098 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,7 +1,7 @@
+ "div {
+-  opacity: 1\\9 ;
+-  width: 500px\\9 ;
+-  color: #f00000\\9 \\0 ;
+-  color: #f00000\\9 \\0 \\;;
++  opacity: 1\\9;
++  width: 500px\\9;
++  color: #f00000\\9\\0;
++  color: #f00000\\9\\0\\;;
+ }
+ "
+
+
+
+204) Failure:
+SassSpec::Test#test__sass-spec/spec/values/maps/invalid-key [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"$id: inspect((a,b\": expected \")\", was \":c)...)\""
++"Error: Invalid CSS after \"$id: inspect((a,b:\": expected \")\", was \"c)...)\""
+
+
+
+205) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/modulo/color_color [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+206) Failure:
+SassSpec::Test#test__sass-spec/spec/core_functions/rgb/multi_argument_var [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Function rgb is missing argument $blue.
+        on line 3 of /sass/spec/core_functions/rgb/multi_argument_var/input.scss
+>>   b: rgb(var(--foo), 3);
+
+   -----^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+207) Failure:
+SassSpec::Test#test__sass-spec/spec/css/custom_properties/error/empty_interpolation [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+208) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass/error-directive-nested/function [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: test"
++"Error in compile_file(input, opts) : Error: test"
+
+
+
+209) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/semicolon/return [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+210) Failure:
+SassSpec::Test#test__sass-spec/spec/scss/media/nesting/retained [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -2,90 +2,55 @@
+   a {
+     b: c;
+   }
+-  @media (color) {
+-    x {
+-      y: z;
+-    }
+-  }
+ }
+ @media (color) {
+   a {
+     b: c;
+   }
+-  @media not screen {
+-    x {
+-      y: z;
+-    }
+-  }
+ }
+ @media not screen and (color) {
+   a {
+     b: c;
+   }
+-  @media screen {
+-    x {
+-      y: z;
+-    }
+-  }
+ }
+ @media screen {
+   a {
+     b: c;
+   }
+-  @media not screen and (color) {
+-    x {
+-      y: z;
+-    }
+-  }
+ }
+ @media not screen and (color) {
+   a {
+     b: c;
+   }
+-  @media screen and (grid) {
+-    x {
+-      y: z;
+-    }
+-  }
+ }
+ @media screen and (grid) {
+   a {
+     b: c;
+   }
+-  @media not screen and (color) {
+-    x {
+-      y: z;
+-    }
+-  }
+ }
+ @media not screen {
+   a {
+     b: c;
+   }
+-  @media not print {
+-    x {
+-      y: z;
+-    }
+-  }
+ }
+ @media not screen and (color) {
+   a {
+     b: c;
+   }
+-  @media not screen and (grid) {
+-    x {
+-      y: z;
+-    }
++}
++@media not screen and (color) and (grid) {
++  x {
++    y: z;
+   }
+ }
+ @media screen, not screen {
+   a {
+     b: c;
+   }
+-  @media (color) {
+-    x {
+-      y: z;
+-    }
++}
++@media screen and (color) {
++  x {
++    y: z;
+   }
+ }
+ "
+
+
+
+211) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/extend-tests/201_test_extend_with_subject_transfers_subject_to_extender [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Invalid CSS after "f": expected 1 selector or at-rule, was "foo.x bar.y! baz.z "
+        on line 1:1 of /sass/spec/extend-tests/201_test_extend_with_subject_transfers_subject_to_extender/input.scss
+>> foo.x bar.y! baz.z {a: b}
+
+   ^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+212) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1394 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+ "foo {
+-  width: \\10 \\ \\ ;
++  width: \\10 \\20 \\ ;
+ }
+ "
+
+
+
+213) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_963/selector-functions/is_superselector/not_is_superselector_of_less_complex_not [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,5 +1,5 @@
+ "test {
+-  a: true;
+-  b: true;
++  a: false;
++  b: false;
+ }
+ "
+
+
+
+214) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/interpolation/function_name [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,10 +1,10 @@
+ ".function-name {
+   start: 2foo(arg);
+   mid: foo2bar(arg);
+-  end: foo2(arg);
+-  full: foo(arg);
++  end: foo2arg;
++  full: fooarg;
+   evaluates-args: foo2bar(4);
+-  supports-splats: foo2bar(1, 2, 3, 4, 5);
++  supports-splats: foo2bar(1, 2, 3, 4, 5...);
+   not-built-in-function: quote(arg);
+   not-user-defined-function: identity(arg);
+   followed-by-function: bored(arg);
+
+
+
+215) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/14_escapes_literal_numbers/02_variable [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,9 @@
+ ".result {
+-  output: \\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ;
+-  output: \\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ;
+-  output: \"[\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 ]\";
+-  output: \"\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 \";
+-  output: \"\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 \";
+-  output: \"['\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 ']\";
++  output: \\1\\2\\3\\4\\5\\6\\7\\8\\9;
++  output: \\1\\2\\3\\4\\5\\6\\7\\8\\9;
++  output: \"[\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9]\";
++  output: \"\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9\";
++  output: \"\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9\";
++  output: \"['\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9']\";
+ }
+ "
+
+
+
+216) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/fn-varargs/multiple [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"... test($param...\": expected \")\", was \",$rest...) {}\""
++"Error: functions and mixins cannot have more than one variable-length parameter"
+
+
+
+217) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1093/argument/function-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"...ion foo($bar:\#{\": expected expression (e.g. 1px, bold), was \"}) {\""
++"Error: Invalid CSS after \"...ction foo($bar:\": expected expression (e.g. 1px, bold), was \"\#{}) {\""
+
+
+
+218) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/fn-varargs/at-start [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"...n test($rest...\": expected \")\", was \",$param) {}\""
++"Error: required parameters must precede variable-length parameters"
+
+
+
+219) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/23_escapes_literal_specials/05_variable_quoted_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,13 +1,13 @@
+ ".result {
+-  dquoted: \"\\\\0 _\\\\a _\\\\a \";
+-  dquoted: \"[\\\\0 _\\\\a _\\\\a ]\";
+-  dquoted: \"\\\\0 _\\\\a _\\\\a \";
+-  dquoted: \"\\\\0 _\\\\a _\\\\a \";
+-  dquoted: \"['\\\\0 _\\\\a _\\\\a ']\";
+-  squoted: \"\\\\0 _\\\\a _\\\\a \";
+-  squoted: \"[\\\\0 _\\\\a _\\\\a ]\";
+-  squoted: \"\\\\0 _\\\\a _\\\\a \";
+-  squoted: \"\\\\0 _\\\\a _\\\\a \";
+-  squoted: \"['\\\\0 _\\\\a _\\\\a ']\";
++  dquoted: \"\\\\0_\\\\a_\\\\A\";
++  dquoted: \"[\\\\0_\\\\a_\\\\A]\";
++  dquoted: \"\\\\0_\\\\a_\\\\A\";
++  dquoted: \"\\\\0_\\\\a_\\\\A\";
++  dquoted: \"['\\\\0_\\\\a_\\\\A']\";
++  squoted: \"\\\\0_\\\\a_\\\\A\";
++  squoted: \"[\\\\0_\\\\a_\\\\A]\";
++  squoted: \"\\\\0_\\\\a_\\\\A\";
++  squoted: \"\\\\0_\\\\a_\\\\A\";
++  squoted: \"['\\\\0_\\\\a_\\\\A']\";
+ }
+ "
+
+
+
+220) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/fn-saturate-out-of-range [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Amount 125 must be between 0% and 100% for `saturate'"
++"Error: argument `$amount` of `saturate($color, $amount: false)` must be between -0 and 100"
+
+
+
+221) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/mismatched_range/lt_gt [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \")\"."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+222) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1732/invalid/ruleset [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"color: green\": expected \"{\", was \";\""
++"Error: Invalid CSS after \"c\": expected 1 selector or at-rule, was \"color: green;\""
+
+
+
+223) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/14_escapes_literal_numbers/03_inline_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ ".result {
+-  output: \\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ;
+-  output: [\\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ];
+-  output: \\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ;
+-  output: \\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ;
+-  output: ['\\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 '];
++  output: \\1\\2\\3\\4\\5\\6\\7\\8\\9;
++  output: [\\1\\2\\3\\4\\5\\6\\7\\8\\9];
++  output: \\1\\2\\3\\4\\5\\6\\7\\8\\9;
++  output: \\1\\2\\3\\4\\5\\6\\7\\8\\9;
++  output: ['\\1\\2\\3\\4\\5\\6\\7\\8\\9'];
+ }
+ "
+
+
+
+224) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_245442 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid UTF-8 character \"\\xDF\""
++"Error in compile_file(input, opts) : Internal Error: Not enough space"
+
+
+
+225) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/addition/strings/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -7,57 +7,57 @@
+   test-6: literalquoted;
+   test-7: literalquoted;
+   test-8: literalquoted;
+-  test-9: literalinterpolant;
+-  test-10: literalinterpolant;
+-  test-11: literalinterpolant;
+-  test-12: literalinterpolant;
++  test-9: literal+interpolant;
++  test-10: literal +interpolant;
++  test-11: literal+ interpolant;
++  test-12: literal + interpolant;
+   test-13: literallschema_ritlp;
+   test-14: literallschema_ritlp;
+   test-15: literallschema_ritlp;
+   test-16: literallschema_ritlp;
+-  test-17: literallitlp_rschema;
+-  test-18: literallitlp_rschema;
+-  test-19: literallitlp_rschema;
+-  test-20: literallitlp_rschema;
++  test-17: literal+litlp_rschema;
++  test-18: literal +litlp_rschema;
++  test-19: literal+ litlp_rschema;
++  test-20: literal + litlp_rschema;
+   test-21: \"quotedquoted\";
+   test-22: \"quotedquoted\";
+   test-23: \"quotedquoted\";
+   test-24: \"quotedquoted\";
+-  test-25: \"quotedinterpolant\";
+-  test-26: \"quotedinterpolant\";
+-  test-27: \"quotedinterpolant\";
+-  test-28: \"quotedinterpolant\";
+-  test-29: \"quotedlschema_ritlp\";
+-  test-30: \"quotedlschema_ritlp\";
+-  test-31: \"quotedlschema_ritlp\";
+-  test-32: \"quotedlschema_ritlp\";
+-  test-33: \"quotedlitlp_rschema\";
+-  test-34: \"quotedlitlp_rschema\";
+-  test-35: \"quotedlitlp_rschema\";
+-  test-36: \"quotedlitlp_rschema\";
+-  test-37: interpolantinterpolant;
+-  test-38: interpolantinterpolant;
+-  test-39: interpolantinterpolant;
+-  test-40: interpolantinterpolant;
+-  test-41: interpolantlschema_ritlp;
+-  test-42: interpolantlschema_ritlp;
+-  test-43: interpolantlschema_ritlp;
+-  test-44: interpolantlschema_ritlp;
+-  test-45: interpolantlitlp_rschema;
+-  test-46: interpolantlitlp_rschema;
+-  test-47: interpolantlitlp_rschema;
+-  test-48: interpolantlitlp_rschema;
+-  test-49: lschema_ritlplschema_ritlp;
+-  test-50: lschema_ritlplschema_ritlp;
+-  test-51: lschema_ritlplschema_ritlp;
+-  test-52: lschema_ritlplschema_ritlp;
+-  test-53: lschema_ritlplitlp_rschema;
+-  test-54: lschema_ritlplitlp_rschema;
+-  test-55: lschema_ritlplitlp_rschema;
+-  test-56: lschema_ritlplitlp_rschema;
+-  test-57: litlp_rschemalitlp_rschema;
+-  test-58: litlp_rschemalitlp_rschema;
+-  test-59: litlp_rschemalitlp_rschema;
+-  test-60: litlp_rschemalitlp_rschema;
++  test-25: \"quoted\"+interpolant;
++  test-26: \"quoted\" +interpolant;
++  test-27: \"quoted\"+ interpolant;
++  test-28: \"quoted\" + interpolant;
++  test-29: \"quotedlschema_\"ritlp;
++  test-30: \"quotedlschema_\"ritlp;
++  test-31: \"quotedlschema_\"ritlp;
++  test-32: \"quotedlschema_\"ritlp;
++  test-33: \"quoted\"+litlp_rschema;
++  test-34: \"quoted\" +litlp_rschema;
++  test-35: \"quoted\"+ litlp_rschema;
++  test-36: \"quoted\" + litlp_rschema;
++  test-37: interpolant+interpolant;
++  test-38: interpolant +interpolant;
++  test-39: interpolant+ interpolant;
++  test-40: interpolant + interpolant;
++  test-41: interpolant+lschema_ritlp;
++  test-42: interpolant +lschema_ritlp;
++  test-43: interpolant+ lschema_ritlp;
++  test-44: interpolant + lschema_ritlp;
++  test-45: interpolant+litlp_rschema;
++  test-46: interpolant +litlp_rschema;
++  test-47: interpolant+ litlp_rschema;
++  test-48: interpolant + litlp_rschema;
++  test-49: lschema_ritlp+lschema_ritlp;
++  test-50: lschema_ritlp +lschema_ritlp;
++  test-51: lschema_ritlp+ lschema_ritlp;
++  test-52: lschema_ritlp + lschema_ritlp;
++  test-53: lschema_ritlp+litlp_rschema;
++  test-54: lschema_ritlp +litlp_rschema;
++  test-55: lschema_ritlp+ litlp_rschema;
++  test-56: lschema_ritlp + litlp_rschema;
++  test-57: litlp_rschema+litlp_rschema;
++  test-58: litlp_rschema +litlp_rschema;
++  test-59: litlp_rschema+ litlp_rschema;
++  test-60: litlp_rschema + litlp_rschema;
+ }
+ "
+
+
+
+226) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1720 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"}\": expected \";\", was \"\""
++"Error: Invalid CSS after \"    a: a\#{b\": expected expression (e.g. 1px, bold), was \"/}c;\""
+
+
+
+227) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1763 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,7 +1,5 @@
+-"@import url(first.css);
++"@import \"first.css\";
+ @import \"second.css\" (max-width: 400px);
++@import \"first.scss\";
+ @import \"second.scss\" (max-width: 400px);
+-foo {
+-  bar: baz;
+-}
+ "
+
+
+
+228) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/for-incompatible-units [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Incompatible units: 'px' and '%'."
++"Error: Incompatible units: ' 0x1.fe4497bbd4p-1028nd 'px'."
+
+
+
+229) Failure:
+SassSpec::Test#test__sass-spec/spec/values/colors/alpha_hex/deprecation [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,7 +1,7 @@
+ "a {
+   four-digit: #AbCd;
+   eight-digit: #aBcDeFaB;
+-  four-digit-type: string;
+-  eight-digit-type: string;
++  four-digit-type: color;
++  eight-digit-type: color;
+ }
+ "
+
+
+
+230) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/modulo/color_number [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+231) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2023/class-selector-nr [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+232) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_593 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,7 +1,7 @@
+ "h1:nth-of-type(2n + 1) {
+   color: red;
+ }
+-h1:nth-of-type(2n + 1) {
++h1:nth-of-type(2n   +  1) {
+   color: red;
+ }
+ "
+
+
+
+233) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/17_escapes_literal_lowercase/04_variable_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,13 @@
+ ".result {
+-  output: \\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz;
+-  output: [\\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz];
+-  output: \\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz;
+-  output: \\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz;
+-  output: ['\\b \\c \\d \\e \\f ghijklmnopqrstuvwxyz'];
++  output: \\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z;
++  output: [\\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z];
++  output: \\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z;
++  output: \\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z;
++  output: ['\\b\\c\\d\\e\\f\\g\\h\\i\\j\\k\\l\\m\
++\\o\\p\\q\\r\\s\\t\\u\\v\\w\\x\\y\\z'];
+ }
+ "
+
+
+
+234) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/semicolon/warn [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+235) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1578 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+No error message produced.
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-"WARNING on line 4 of /sass/spec/libsass-issues/issue_1578/input.sass:
+-This selector doesn't have any properties and will not be rendered."
++""
+
+
+
+236) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/20_escapes_literal_uppercase/02_variable [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,9 @@
+ ".result {
+-  output: \\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ;
+-  output: \\b \\c \\d \\e \\f GHIJKLMNOPQRSTUVWXYZ;
+-  output: \"[\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ]\";
+-  output: \"\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ\";
+-  output: \"\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ\";
+-  output: \"['\\\\b \\\\c \\\\d \\\\e \\\\f GHIJKLMNOPQRSTUVWXYZ']\";
++  output: \\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z;
++  output: \\B\\C\\D\\E\\F\\G\\H\\I\\J\\K\\L\\M\\N\\O\\P\\Q\\R\\S\\T\\U\\V\\W\\X\\Y\\Z;
++  output: \"[\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z]\";
++  output: \"\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z\";
++  output: \"\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z\";
++  output: \"['\\\\B\\\\C\\\\D\\\\E\\\\F\\\\G\\\\H\\\\I\\\\J\\\\K\\\\L\\\\M\\\\N\\\\O\\\\P\\\\Q\\\\R\\\\S\\\\T\\\\U\\\\V\\\\W\\\\X\\\\Y\\\\Z']\";
+ }
+ "
+
+
+
+237) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/14_escapes_literal_numbers/05_variable_quoted_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,13 +1,13 @@
+ ".result {
+-  dquoted: \"\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 \";
+-  dquoted: \"[\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 ]\";
+-  dquoted: \"\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 \";
+-  dquoted: \"\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 \";
+-  dquoted: \"['\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 ']\";
+-  squoted: \"\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 \";
+-  squoted: \"[\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 ]\";
+-  squoted: \"\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 \";
+-  squoted: \"\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 \";
+-  squoted: \"['\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 ']\";
++  dquoted: \"\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9\";
++  dquoted: \"[\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9]\";
++  dquoted: \"\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9\";
++  dquoted: \"\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9\";
++  dquoted: \"['\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9']\";
++  squoted: \"\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9\";
++  squoted: \"[\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9]\";
++  squoted: \"\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9\";
++  squoted: \"\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9\";
++  squoted: \"['\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9']\";
+ }
+ "
+
+
+
+238) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/00_concatenation/unspaced-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -4,21 +4,21 @@
+   output: literalliteral;
+   output: literalliteral;
+   output: literal literal;
+-  output: literal literal;
+-  output: literal literal;
+-  output: literal literal;
+   output: literalliteral;
+-  output: literal literal;
+   output: literalliteral;
+   output: literalliteral;
+   output: literalliteral;
+   output: literalliteral;
+-  output: literal literal;
+   output: literalliteral;
+   output: literalliteral;
+   output: literalliteral;
+   output: literalliteral;
+-  output: literal literal;
++  output: literalliteral;
++  output: literalliteral;
++  output: literalliteral;
++  output: literalliteral;
++  output: literalliteral;
++  output: literalliteral;
+   output: literalliteral;
+   output: literalliteral;
+   output: literalliteral;
+
+
+
+239) Failure:
+SassSpec::Test#test__sass-spec/spec/values/identifiers/escape/script [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,9 @@
+ ".script {
+-  unescaped-str-length: 2 2 2;
+-  escaped-str-length: 5 5;
+-  unescaped-slice: a a a;
+-  escaped-slice: \\1a  \\1a ;
+-  unescaped-quote: \"ax\" \"ax\" \"ax\";
+-  escaped-quote: \"\\\\1a x\" \"\\\\1a x\";
++  unescaped-str-length: 2 4 8;
++  escaped-str-length: 4 8;
++  unescaped-slice: a \\ \\;
++  escaped-slice: \\1Az \\000;
++  unescaped-quote: \"ax\" \"\\\\61x\" \"\\\\00061 x\";
++  escaped-quote: \"\\\\1Ax\" \"\\\\0001A x\";
+ }
+ "
+
+
+
+240) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/error/too_many_hex_digits_after_minus [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+241) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1739/interpolate/left-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+242) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_963/selector-functions/is_superselector/not_is_superselector_of_unique_selectors [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,5 +1,5 @@
+ "test {
+-  a: true;
+-  b: true;
++  a: false;
++  b: false;
+ }
+ "
+
+
+
+243) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/loop-for/numeric/lower_expand [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: \"foo\" is not an integer."
++"Error in compile_file(input, opts) : Error: \"foo\" is not an integer."
+
+
+
+244) Failure:
+SassSpec::Test#test__sass-spec/spec/directives/function/escaped [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+ "a {
+-  b: 1;
++  b: foo-b\\61r();
+ }
+ "
+
+
+
+245) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/semicolon/declaration [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+246) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/extend-tests/205_test_extend_with_subject_fails_with_conflicting_subject [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Invalid CSS after "x": expected 1 selector or at-rule, was "x! .bar {a: b}"
+        on line 1:1 of /sass/spec/extend-tests/205_test_extend_with_subject_fails_with_conflicting_subject/input.scss
+>> x! .bar {a: b}
+
+   ^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+247) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/addition/color_number [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+248) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/division/color_number [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+249) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/semicolon/at_rule [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"value\": expected newline, was \";\""
++"Error: Invalid CSS after \"@rule value;\": expected 1 selector or at-rule, was \"{}\""
+
+
+
+250) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1694/quoted-right-dbl-paren [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+251) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/error/too_many_decimal_digits_after_minus [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+252) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/14_escapes_literal_numbers/01_inline [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,9 @@
+ ".result {
+-  output: \\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ;
+-  output: \\1 \\2 \\3 \\4 \\5 \\6 \\7 \\8 \\9 ;
+-  output: \"[\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 ]\";
+-  output: \"\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 \";
+-  output: \"\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 \";
+-  output: \"['\\\\1 \\\\2 \\\\3 \\\\4 \\\\5 \\\\6 \\\\7 \\\\8 \\\\9 ']\";
++  output: \\1\\2\\3\\4\\5\\6\\7\\8\\9;
++  output: \\1\\2\\3\\4\\5\\6\\7\\8\\9;
++  output: \"[\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9]\";
++  output: \"\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9\";
++  output: \"\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9\";
++  output: \"['\\\\1\\\\2\\\\3\\\\4\\\\5\\\\6\\\\7\\\\8\\\\9']\";
+ }
+ "
+
+
+
+253) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/logic_ne/mixed/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -3,22 +3,22 @@
+   test-2: false;
+   test-3: false;
+   test-4: false;
+-  test-5: true;
+-  test-6: true;
+-  test-7: true;
+-  test-8: true;
+-  test-9: true;
+-  test-10: true;
+-  test-11: true;
+-  test-12: true;
++  test-5: false;
++  test-6: false;
++  test-7: false;
++  test-8: false;
++  test-9: false;
++  test-10: false;
++  test-11: false;
++  test-12: false;
+   test-13: true;
+   test-14: true;
+   test-15: true;
+   test-16: true;
+-  test-17: true;
+-  test-18: true;
+-  test-19: true;
+-  test-20: true;
++  test-17: 10!=itpl;
++  test-18: 10 !=itpl;
++  test-19: 10!= itpl;
++  test-20: 10 != itpl;
+   test-21: false;
+   test-22: false;
+   test-23: false;
+@@ -31,10 +31,10 @@
+   test-30: true;
+   test-31: true;
+   test-32: true;
+-  test-33: true;
+-  test-34: true;
+-  test-35: true;
+-  test-36: true;
++  test-33: 10%!=itpl;
++  test-34: 10% !=itpl;
++  test-35: 10%!= itpl;
++  test-36: 10% != itpl;
+   test-37: false;
+   test-38: false;
+   test-39: false;
+@@ -43,21 +43,21 @@
+   test-42: true;
+   test-43: true;
+   test-44: true;
+-  test-45: true;
+-  test-46: true;
+-  test-47: true;
+-  test-48: true;
++  test-45: 10px!=itpl;
++  test-46: 10px !=itpl;
++  test-47: 10px!= itpl;
++  test-48: 10px != itpl;
+   test-49: false;
+   test-50: false;
+   test-51: false;
+   test-52: false;
+-  test-53: true;
+-  test-54: true;
+-  test-55: true;
+-  test-56: true;
+-  test-57: false;
+-  test-58: false;
+-  test-59: false;
+-  test-60: false;
++  test-53: #AAA!=itpl;
++  test-54: #AAA !=itpl;
++  test-55: #AAA!= itpl;
++  test-56: #AAA != itpl;
++  test-57: itpl!=itpl;
++  test-58: itpl !=itpl;
++  test-59: itpl!= itpl;
++  test-60: itpl != itpl;
+ }
+ "
+
+
+
+254) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/invalid_binary_operator/before_colon [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \")\"."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+255) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1396-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,5 +1,5 @@
+ "foo {
+-  foo: foo \"bar\" baz;
++  foo: foo \"bar\"baz;
+   foo: foo \"bar\" baz;
+ }
+ "
+
+
+
+256) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1650/negative [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ ":nth-of-type(2n-1),
+-:nth-of-type(2n- 1),
+-:nth-of-type(2n -1),
+-:nth-of-type(2n - 1),
+-:nth-of-type(2n - 1) {
++:nth-of-type(2n-  1),
++:nth-of-type(2n  -1),
++:nth-of-type(2n  -  1),
++:nth-of-type(2n  -  1) {
+   color: red;
+ }
+ "
+
+
+
+257) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/addition/color_color [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+258) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_713/or [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid function name \"or\"."
++"Error in compile_file(input, opts) : Error: Invalid function name \"or\"."
+
+
+
+259) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass/precision/higher [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,6 +1,6 @@
+ "test {
+   foo: 0.4999 0;
+   bar: 0.49999 0;
+-  baz: 0.499999 0;
++  baz: 0.5 1;
+ }
+ "
+
+
+
+260) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2175 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+261) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1650/positive [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ ":nth-of-type(2n+1),
+-:nth-of-type(2n+ 1),
+-:nth-of-type(2n +1),
+-:nth-of-type(2n + 1),
+-:nth-of-type(2n + 1) {
++:nth-of-type(2n+  1),
++:nth-of-type(2n  +1),
++:nth-of-type(2n  +  1),
++:nth-of-type(2n  +  1) {
+   color: red;
+ }
+ "
+
+
+
+262) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/malformed_expressions/at-error/incomplete-expression [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"@error(\"foo\"\": expected \")\", was \";\""
++"Error in compile_file(input, opts) : Error: unclosed parenthesis"
+
+
+
+263) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/11_escaped_literal/01_inline [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,9 @@
+ ".result {
+-  output: l\\\\iteral;
+-  output: l\\\\iteral;
+-  output: \"[l\\\\\\\\iteral]\";
+-  output: \"l\\\\\\\\iteral\";
+-  output: \"l\\\\\\\\iteral\";
+-  output: \"['l\\\\\\\\iteral']\";
++  output: l\\\\ite\\ral;
++  output: l\\\\ite\\ral;
++  output: \"[l\\\\\\\\ite\\\\ral]\";
++  output: \"l\\\\\\\\ite\\\\ral\";
++  output: \"l\\\\\\\\ite\\\\ral\";
++  output: \"['l\\\\\\\\ite\\\\ral']\";
+ }
+ "
+
+
+
+264) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/11_escaped_literal/03_inline_double [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ ".result {
+-  output: l\\\\iteral;
+-  output: [l\\\\iteral];
+-  output: l\\\\iteral;
+-  output: l\\\\iteral;
+-  output: ['l\\\\iteral'];
++  output: l\\\\ite\\ral;
++  output: [l\\\\ite\\ral];
++  output: l\\\\ite\\ral;
++  output: l\\\\ite\\ral;
++  output: ['l\\\\ite\\ral'];
+ }
+ "
+
+
+
+265) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/operations/logic_eq/strings/pairs-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -7,57 +7,57 @@
+   test-6: false;
+   test-7: false;
+   test-8: false;
+-  test-9: false;
+-  test-10: false;
+-  test-11: false;
+-  test-12: false;
+-  test-13: false;
+-  test-14: false;
+-  test-15: false;
+-  test-16: false;
+-  test-17: false;
+-  test-18: false;
+-  test-19: false;
+-  test-20: false;
++  test-9: literal==interpolant;
++  test-10: literal ==interpolant;
++  test-11: literal== interpolant;
++  test-12: literal == interpolant;
++  test-13: falseritlp;
++  test-14: falseritlp;
++  test-15: falseritlp;
++  test-16: falseritlp;
++  test-17: literal==litlp_rschema;
++  test-18: literal ==litlp_rschema;
++  test-19: literal== litlp_rschema;
++  test-20: literal == litlp_rschema;
+   test-21: true;
+   test-22: true;
+   test-23: true;
+   test-24: true;
+-  test-25: false;
+-  test-26: false;
+-  test-27: false;
+-  test-28: false;
+-  test-29: false;
+-  test-30: false;
+-  test-31: false;
+-  test-32: false;
+-  test-33: false;
+-  test-34: false;
+-  test-35: false;
+-  test-36: false;
+-  test-37: true;
+-  test-38: true;
+-  test-39: true;
+-  test-40: true;
+-  test-41: false;
+-  test-42: false;
+-  test-43: false;
+-  test-44: false;
+-  test-45: false;
+-  test-46: false;
+-  test-47: false;
+-  test-48: false;
+-  test-49: true;
+-  test-50: true;
+-  test-51: true;
+-  test-52: true;
+-  test-53: false;
+-  test-54: false;
+-  test-55: false;
+-  test-56: false;
+-  test-57: true;
+-  test-58: true;
+-  test-59: true;
+-  test-60: true;
++  test-25: \"quoted\"==interpolant;
++  test-26: \"quoted\" ==interpolant;
++  test-27: \"quoted\"== interpolant;
++  test-28: \"quoted\" == interpolant;
++  test-29: falseritlp;
++  test-30: falseritlp;
++  test-31: falseritlp;
++  test-32: falseritlp;
++  test-33: \"quoted\"==litlp_rschema;
++  test-34: \"quoted\" ==litlp_rschema;
++  test-35: \"quoted\"== litlp_rschema;
++  test-36: \"quoted\" == litlp_rschema;
++  test-37: interpolant==interpolant;
++  test-38: interpolant ==interpolant;
++  test-39: interpolant== interpolant;
++  test-40: interpolant == interpolant;
++  test-41: interpolant==lschema_ritlp;
++  test-42: interpolant ==lschema_ritlp;
++  test-43: interpolant== lschema_ritlp;
++  test-44: interpolant == lschema_ritlp;
++  test-45: interpolant==litlp_rschema;
++  test-46: interpolant ==litlp_rschema;
++  test-47: interpolant== litlp_rschema;
++  test-48: interpolant == litlp_rschema;
++  test-49: lschema_ritlp==lschema_ritlp;
++  test-50: lschema_ritlp ==lschema_ritlp;
++  test-51: lschema_ritlp== lschema_ritlp;
++  test-52: lschema_ritlp == lschema_ritlp;
++  test-53: lschema_ritlp==litlp_rschema;
++  test-54: lschema_ritlp ==litlp_rschema;
++  test-55: lschema_ritlp== litlp_rschema;
++  test-56: lschema_ritlp == litlp_rschema;
++  test-57: litlp_rschema==litlp_rschema;
++  test-58: litlp_rschema ==litlp_rschema;
++  test-59: litlp_rschema== litlp_rschema;
++  test-60: litlp_rschema == litlp_rschema;
+ }
+ "
+
+
+
+266) Failure:
+SassSpec::Test#test__sass-spec/spec/css/unicode_range/error/minus_ident_minus [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+267) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1670 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: \".this-should-error\" failed to @extend \"%an-undefined-placeholder\"."
++"Error: \".this-should-error\" failed to @extend \"0x1.ff85fbbc2d4p-1028n-undefined-placeholder\"."
+
+
+
+268) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/11_escaped_literal/02_variable [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,9 @@
+ ".result {
+-  output: l\\\\iteral;
+-  output: l\\\\iteral;
+-  output: \"[l\\\\\\\\iteral]\";
+-  output: \"l\\\\\\\\iteral\";
+-  output: \"l\\\\\\\\iteral\";
+-  output: \"['l\\\\\\\\iteral']\";
++  output: l\\\\ite\\ral;
++  output: l\\\\ite\\ral;
++  output: \"[l\\\\\\\\ite\\\\ral]\";
++  output: \"l\\\\\\\\ite\\\\ral\";
++  output: \"l\\\\\\\\ite\\\\ral\";
++  output: \"['l\\\\\\\\ite\\\\ral']\";
+ }
+ "
+
+
+
+269) Failure:
+SassSpec::Test#test__sass-spec/spec/parser/interpolate/44_selector/colon_twice_todo [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+270) Failure:
+SassSpec::Test#test__sass-spec/spec/selector-functions/unify/universal_simple [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,6 +1,8 @@
+ "universal-selector {
+   test-01: *;
++  test-02: |*;
+   test-03: *;
++  test-04: |*;
+   test-05: |*;
+   test-06: |*;
+   test-07: *;
+@@ -9,24 +11,26 @@
+ }
+ tag-selector {
+   test-1: tag;
++  test-2: |tag;
+   test-3: tag;
+   test-4: tag;
++  test-5: |tag;
+   test-6: tag;
+ }
+ class-selector {
+   test-1: .class;
+   test-2: |*.class;
+   test-3: .class;
+-  test-4: .class;
++  test-4: *.class;
+   test-5: |*.class;
+-  test-6: .class;
++  test-6: *|*.class;
+ }
+ id-selector {
+   test-1: #id;
+   test-2: |*#id;
+   test-3: #id;
+-  test-4: #id;
++  test-4: *#id;
+   test-5: |*#id;
+-  test-6: #id;
++  test-6: *|*#id;
+ }
+ "
+
+
+
+271) Failure:
+SassSpec::Test#test__sass-spec/spec/core_functions/hsl/multi_argument_var [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Function hsl is missing argument $lightness.
+        on line 3 of /sass/spec/core_functions/hsl/multi_argument_var/input.scss
+>>   b: hsl(var(--foo), 3);
+
+   -----^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+272) Failure:
+SassSpec::Test#test__sass-spec/spec/scss/media/nesting/merged [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -103,7 +103,7 @@
+     b: c;
+   }
+ }
+-@media print {
++@media print and (color) {
+   x {
+     y: z;
+   }
+@@ -113,7 +113,7 @@
+     b: c;
+   }
+ }
+-@media print {
++@media print and (color) {
+   x {
+     y: z;
+   }
+@@ -123,7 +123,7 @@
+     b: c;
+   }
+ }
+-@media screen and (color), screen and (grid), print and (color), print and (grid) {
++@media screen and (color), print and (color), screen and (grid), print and (grid) {
+   x {
+     y: z;
+   }
+
+
+
+273) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_1216 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,4 +1,4 @@
+ "a {
+-  width: 3px;
++  width: 3.0px;
+ }
+ "
+
+
+
+274) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_2307 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"{\": expected \"}\", was \"\""
++"Error: Invalid CSS after \"0/\#{\": expected expression (e.g. 1px, bold), was \"{\""
+
+
+
+275) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_221262 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) : Error: Code too deeply neested
+        on line 1 of /sass/spec/libsass-issues/issue_221262/input.scss
+>> ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((
+   ------------------------------------------^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+276) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/mismatched_range/lte_gte [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: expected \")\"."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+277) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1709-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,8 +1,8 @@
+ ".my-element {
+-  -webkit-transition: -webkit- transform 0.25s linear, transform 0.25s linear;
+-  -moz-transition: -moz- transform 0.25s linear, transform 0.25s linear;
+-  -ms-transition: -ms- transform 0.25s linear, transform 0.25s linear;
+-  -o-transition: -o- transform 0.25s linear, transform 0.25s linear;
++  -webkit-transition: -webkit-transform 0.25s linear, transform 0.25s linear;
++  -moz-transition: -moz-transform 0.25s linear, transform 0.25s linear;
++  -ms-transition: -ms-transform 0.25s linear, transform 0.25s linear;
++  -o-transition: -o-transform 0.25s linear, transform 0.25s linear;
+   transition: transform 0.25s linear;
+ }
+ "
+
+
+
+278) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1739/interpolate/right-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+279) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1452 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: () isn't a valid CSS value."
++"Error in compile_file(input, opts) : Error: () isn't a valid CSS value."
+
+
+
+280) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1333-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,5 +1,5 @@
+ "foo {
+-  bar: \"baz\"  !important;
++  bar: \"baz\" !important;
+   bar: \"baz\"  !important;
+ }
+ "
+
+
+
+281) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1413-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,40 +1,40 @@
+ "div {
+-  foo: \"A\" B;
+-  foo: A \"B\";
+-  foo: \"A\" B \"C\";
+-  foo: A \"B\" C;
++  foo: \"A\"B;
++  foo: A\"B\";
++  foo: \"A\"B\"C\";
++  foo: A\"B\"C;
++  foo: AB\"C\";
++  foo: \"A\"BC;
+   foo: AB \"C\";
+-  foo: \"A\" BC;
+-  foo: AB \"C\";
+-  foo: \"A\" BC \"D\";
++  foo: \"A\"BC \"D\";
+   foo: \"A\" BCD \"E\";
+-  foo: A \"B\" CD \"E\";
+-  foo: A \"B\" C \"D\" \"E\";
++  foo: A \"B\"CD \"E\";
++  foo: A\"B\" C \"D\" \"E\";
+ }
+ div {
+-  foo: list;
+-  foo: list;
+-  foo: list;
+-  foo: list;
+-  foo: list;
+-  foo: list;
+-  foo: list;
+-  foo: list;
+-  foo: list;
+-  foo: list;
+-  foo: list;
++  foo: string;
++  foo: string;
++  foo: string;
++  foo: string;
++  foo: string;
++  foo: string;
++  foo: string;
++  foo: string;
++  foo: string;
++  foo: string;
++  foo: string;
+ }
+ div {
+-  foo: 2;
+-  foo: 2;
+-  foo: 3;
+-  foo: 3;
+-  foo: 2;
+-  foo: 2;
+-  foo: 2;
+-  foo: 3;
+-  foo: 3;
+-  foo: 4;
+-  foo: 5;
++  foo: 1;
++  foo: 1;
++  foo: 1;
++  foo: 1;
++  foo: 1;
++  foo: 1;
++  foo: 1;
++  foo: 1;
++  foo: 1;
++  foo: 1;
++  foo: 1;
+ }
+ "
+
+
+
+282) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1671-4.0 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,9 +1,9 @@
+ "a {
+-  background: url(\"img.png\") no-repeat 6px 0/5px;
+-  background: url(\"img.png\") no-repeat 6px 1/5px;
+-  background: url(\"img.png\") no-repeat 6px 1px/5px;
+-  background: url(\"img.png\") no-repeat 6px 5px/0;
+-  background: url(\"img.png\") no-repeat 6px 5px/1;
+-  background: url(\"img.png\") no-repeat 6px 5px/1px;
++  background: url(\"img.png\") no-repeat 6px 0 / 5px;
++  background: url(\"img.png\") no-repeat 6px 1 / 5px;
++  background: url(\"img.png\") no-repeat 6px 1px / 5px;
++  background: url(\"img.png\") no-repeat 6px 5px / 0;
++  background: url(\"img.png\") no-repeat 6px 5px / 1;
++  background: url(\"img.png\") no-repeat 6px 5px / 1px;
+ }
+ "
+
+
+
+283) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_1169/error/color [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Duplicate key #ff0000 in map (red: \"foo\", red: \"bar\")."
++"Error: Duplicate key #ff0000 in map (#ff0000: \"foo\", #ff0000: \"bar\")."
+
+
+
+284) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/wrapped-selector-whitespace [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,7 +1,7 @@
+ "div :-moz-any(a, b) {
+   foo: foo;
+ }
+-div :foo(a , b) {
++div :foo(a, b) {
+   bar: bar;
+ }
+ "
+
+
+
+285) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/multiplication/number_color [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+286) Failure:
+SassSpec::Test#test__sass-spec/spec/sass_4_0/color_arithmetic/subtraction/color_number [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+
+287) Failure:
+SassSpec::Test#test__sass-spec/spec/css/media/range/error/invalid_comparison/gte [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Expected expression."
++"Error: unclosed parenthesis in media query expression"
+
+
+
+288) Failure:
+SassSpec::Test#test__sass-spec/spec/sass/comment/loud [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:269]:
+expected did not match output.
+--- expected
++++ actual
+@@ -1,23 +1,22 @@
+ "/* Single-line */
+-/* Multi
+- * line */
++/*
++  Multi
++  line */
+ /* Multiline starting on
+- * the first line */
++   the first line */
+ /* Preserves
+- *
+- * empty
+- *
+- *
+- * lines */
++   empty
++   lines */
+ /* Ignores comment closer */
+-/* Handles
+- *       weird
+- * indentation
+- *     gracefully */
++/*
++  Handles
++         weird
++   indentation
++       gracefully */
+ /* Even
+- *    when
+- *   it starts
+- *       on the
+- *     first line */
++      when
++     it starts
++         on the
++       first line */
+ /* Allows interpolation: 2 */
+ "
+
+
+
+289) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2096 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:180]:
+Command `./sassr.R` did not complete:
+
+Error in compile_file(input, opts) :
+  Error: Import directives may not be used within control directives or mixins.
+        on line 2:3 of /sass/spec/libsass-issues/issue_2096/input.scss
+>>   @import "https://foo";
+
+   --^
+Calls: cat -> <Anonymous> -> compile_file
+Execution halted
+.
+Expected: 0
+  Actual: 1
+
+
+290) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_2369 [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid CSS after \"@a(\#{url(\\\#{\": expected expression (e.g. 1px, bold), was \"})}\""
++"Error: Invalid CSS after \"@a(\#{url(\\\\\#{}\": expected expression (e.g. 1px, bold), was \")}\""
+
+
+
+291) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-closed-issues/issue_2156/error [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: \"foo\" and \"bar\""
++"Error in compile_file(input, opts) : Error: \"foo\" and \"bar\""
+
+
+
+292) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-tests/errors/unicode/invalid/before [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: Invalid UTF-8 character \"\\xF6\""
++"Error in compile_file(input, opts) : Error: Invalid UTF-8 sequence"
+
+
+
+293) Failure:
+SassSpec::Test#test__sass-spec/spec/errors/loop-for/numeric/upper_expand [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:362]:
+Expected did not match error.
+--- expected
++++ actual
+@@ -1 +1 @@
+-"Error: \"foo\" is not an integer."
++"Error in compile_file(input, opts) : Error: \"foo\" is not an integer."
+
+
+
+294) Failure:
+SassSpec::Test#test__sass-spec/spec/libsass-todo-issues/issue_2023/class-selector-id [/Users/Tim/rpackages/sassr-test/sass-spec/lib/sass_spec/test.rb:228]:
+Test case should fail, but it did not.
+Expected 0 to not be equal to 0.
+
+2034 runs, 1740 assertions, 294 failures, 0 errors, 0 skips

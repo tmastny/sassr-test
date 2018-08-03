@@ -1,0 +1,2 @@
+#! /bin/bash
+sass-spec/sass-spec.rb -c ./sassr.R $@
