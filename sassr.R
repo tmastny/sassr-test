@@ -6,5 +6,5 @@ library(minimist)
 args <- minimist(args = commandArgs(TRUE))
 
 if (rlang::has_length(args$`_`)) {
-    cat(sass::compile(args$`_`))
+  cat(sass::compile(args$`_`))
 }
